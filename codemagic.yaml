@@ -57,9 +57,18 @@ workflows:
           VERIFY_DIR=$(mktemp -d)
           unzip -q "$IPA_PATH" -d "$VERIFY_DIR"
           APP_INFO=$(find "$VERIFY_DIR/Payload" -name Info.plist -print -quit)
+          APP_DIR=$(dirname "$APP_INFO")
           ICON_NAME=$(/usr/libexec/PlistBuddy -c "Print :CFBundleIcons:CFBundlePrimaryIcon:CFBundleIconName" "$APP_INFO")
           if [ "$ICON_NAME" != "AppIcon" ]; then
             echo "App icon metadata is missing from the archived application."
+            exit 1
+          fi
+          if [ ! -f "$APP_DIR/Assets.car" ]; then
+            echo "The compiled asset catalog is missing from the archived application."
+            exit 1
+          fi
+          if [ ! -f "$APP_DIR/discografia.json" ]; then
+            echo "The music catalog is missing from the archived application."
             exit 1
           fi
 

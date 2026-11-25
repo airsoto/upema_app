@@ -22,10 +22,12 @@ targets:
           - Assets.xcassets
           - PrivacyInfo.xcprivacy
           - Info.plist
-    resources:
       - path: UPEMA/Resources
+        buildPhase: resources
       - path: UPEMA/Assets.xcassets
+        buildPhase: resources
       - path: UPEMA/PrivacyInfo.xcprivacy
+        buildPhase: resources
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: es.angelsoto.upema

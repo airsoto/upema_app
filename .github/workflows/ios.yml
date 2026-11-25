@@ -18,5 +18,8 @@ jobs:
       - name: Verify app icon metadata
         run: |
           APP_INFO=$(find "$HOME/Library/Developer/Xcode/DerivedData" -path '*/Build/Products/Debug-iphonesimulator/UPEMA.app/Info.plist' -print -quit)
+          APP_DIR=$(dirname "$APP_INFO")
           ICON_NAME=$(/usr/libexec/PlistBuddy -c "Print :CFBundleIcons:CFBundlePrimaryIcon:CFBundleIconName" "$APP_INFO")
           test "$ICON_NAME" = "AppIcon"
+          test -f "$APP_DIR/Assets.car"
+          test -f "$APP_DIR/discografia.json"

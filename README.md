@@ -23,6 +23,8 @@ open UPEMA.xcodeproj
 
 En Xcode, selecciona el target **UPEMA**, abre **Signing & Capabilities**, elige tu equipo de Apple Developer y sustituye `es.angelsoto.upema` si ese identificador ya está ocupado. Después puedes ejecutar en un iPhone o usar **Product → Archive** para preparar la subida a App Store Connect.
 
+La guía completa para crear la ficha de Apple, conectar la firma y subir compilaciones mediante Codemagic está en [APPLE_RELEASE.md](APPLE_RELEASE.md). El repositorio incluye un workflow `codemagic.yaml` que genera un IPA firmado y lo carga en App Store Connect/TestFlight sin enviarlo automáticamente a revisión.
+
 ## Comprobar el catálogo
 
 ```bash
@@ -34,4 +36,3 @@ python3 scripts/verify_catalog.py
 La app no incorpora archivos de audio: reproduce las URL que ya aparecen en `discografia.json`. Las carátulas también se cargan desde sus fuentes originales. Antes de publicar en App Store, confirma que tienes autorización para distribuir las letras, mostrar las carátulas y facilitar la reproducción de cada enlace. Apple puede solicitar documentación sobre los derechos del contenido.
 
 La reseña histórica enlaza a Wikipedia y el catálogo mantiene las fuentes aportadas en el JSON.
-

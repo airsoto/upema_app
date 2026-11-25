@@ -1,0 +1,66 @@
+workflows:
+  ios-testflight:
+    name: UPEMA · TestFlight
+    max_build_duration: 120
+    instance_type: mac_mini_m2
+
+    integrations:
+      # Create this integration with this exact name in Codemagic.
+      app_store_connect: upema_app_store
+
+    environment:
+      groups:
+        # Add APP_STORE_APPLE_ID to this group after creating the app in App Store Connect.
+        - app_store_credentials
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: es.angelsoto.upema
+      vars:
+        BUNDLE_ID: "es.angelsoto.upema"
+        XCODE_PROJECT: "UPEMA.xcodeproj"
+        XCODE_SCHEME: "UPEMA"
+      xcode: 26.6
+
+    scripts:
+      - name: Install XcodeGen
+        script: brew install xcodegen
+
+      - name: Generate Xcode project
+        script: |
+          cd "$CM_BUILD_DIR"
+          xcodegen generate
+
+      - name: Validate catalog
+        script: python3 scripts/verify_catalog.py
+
+      - name: Configure App Store signing
+        script: xcode-project use-profiles
+
+      - name: Set next App Store build number
+        script: |
+          cd "$CM_BUILD_DIR"
+          LATEST_BUILD_NUMBER=$(app-store-connect get-latest-app-store-build-number "$APP_STORE_APPLE_ID" --platform=IOS)
+          if [ -z "$LATEST_BUILD_NUMBER" ]; then
+            LATEST_BUILD_NUMBER=0
+          fi
+          agvtool new-version -all $((LATEST_BUILD_NUMBER + 1))
+
+      - name: Build signed IPA
+        script: |
+          xcode-project build-ipa \
+            --project "$CM_BUILD_DIR/$XCODE_PROJECT" \
+            --scheme "$XCODE_SCHEME"
+
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+
+    publishing:
+      app_store_connect:
+        auth: integration
+        # Upload to App Store Connect/TestFlight but keep review and release manual.
+        submit_to_testflight: false
+        submit_to_app_store: false
+

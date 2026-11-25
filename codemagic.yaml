@@ -51,6 +51,18 @@ workflows:
             --project "$CM_BUILD_DIR/$XCODE_PROJECT" \
             --scheme "$XCODE_SCHEME"
 
+      - name: Verify app icon metadata
+        script: |
+          IPA_PATH=$(find "$CM_BUILD_DIR/build/ios/ipa" -name '*.ipa' -print -quit)
+          VERIFY_DIR=$(mktemp -d)
+          unzip -q "$IPA_PATH" -d "$VERIFY_DIR"
+          APP_INFO=$(find "$VERIFY_DIR/Payload" -name Info.plist -print -quit)
+          ICON_NAME=$(/usr/libexec/PlistBuddy -c "Print :CFBundleIcons:CFBundlePrimaryIcon:CFBundleIconName" "$APP_INFO")
+          if [ "$ICON_NAME" != "AppIcon" ]; then
+            echo "App icon metadata is missing from the archived application."
+            exit 1
+          fi
+
     artifacts:
       - build/ios/ipa/*.ipa
       - /tmp/xcodebuild_logs/*.log
@@ -63,4 +75,3 @@ workflows:
         # Upload to App Store Connect/TestFlight but keep review and release manual.
         submit_to_testflight: false
         submit_to_app_store: false
-

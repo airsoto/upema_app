@@ -9,7 +9,7 @@ La app usa actualmente el identificador `es.angelsoto.upema`. Decide el identifi
 3. En [App Store Connect](https://appstoreconnect.apple.com/), acepta los acuerdos pendientes en **Business**.
 4. En **Apps → + → New App**, crea la ficha:
    - Plataforma: iOS.
-   - Nombre: UPEMA, o el nombre comercial definitivo.
+   - Nombre: Un Pingüino En Mi Ascensor.
    - Idioma principal: Español.
    - Bundle ID: `es.angelsoto.upema`.
    - SKU: por ejemplo `upema-ios-001`.
@@ -51,4 +51,3 @@ El workflow genera el proyecto de Xcode, valida el catálogo, selecciona la firm
 3. Prueba reproducción, segundo plano, auriculares, bloqueo de pantalla, letras, listas y enlaces remotos en un iPhone real.
 4. Cuando todo esté correcto, selecciona la compilación en la versión de App Store, completa la información para revisión y pulsa **Add for Review / Submit for Review**.
 5. Mantén la publicación manual para decidir cuándo sale la app después de la aprobación.
-

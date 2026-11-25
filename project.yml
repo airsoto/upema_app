@@ -26,8 +26,6 @@ targets:
       - path: UPEMA/Resources
       - path: UPEMA/Assets.xcassets
       - path: UPEMA/PrivacyInfo.xcprivacy
-    info:
-      path: UPEMA/Info.plist
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: es.angelsoto.upema

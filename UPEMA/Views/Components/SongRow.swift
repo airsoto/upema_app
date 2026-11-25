@@ -37,7 +37,7 @@ struct SongRow: View {
                     }
                     Spacer()
                     if player.currentSong == song && player.isPlaying {
-                        Image(systemName: "waveform").foregroundStyle(.upemaOrange).symbolEffect(.variableColor.iterative)
+                        Image(systemName: "waveform").foregroundStyle(Color.upemaOrange).symbolEffect(.variableColor.iterative)
                     }
                 }
                 .contentShape(Rectangle())
@@ -95,4 +95,3 @@ struct LyricsView: View {
         .preferredColorScheme(.dark)
     }
 }
-

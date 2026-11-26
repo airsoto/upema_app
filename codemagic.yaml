@@ -10,13 +10,14 @@ workflows:
 
     environment:
       groups:
-        # Add APP_STORE_APPLE_ID to this group after creating the app in App Store Connect.
+        # Contains the App Store Connect API credentials used by the integration.
         - app_store_credentials
       ios_signing:
         distribution_type: app_store
         bundle_identifier: es.angelsoto.upema
       vars:
         BUNDLE_ID: "es.angelsoto.upema"
+        APP_STORE_APPLE_ID: "6839390735"
         XCODE_PROJECT: "UPEMA.xcodeproj"
         XCODE_SCHEME: "UPEMA"
       xcode: 26.6
@@ -39,11 +40,24 @@ workflows:
       - name: Set next App Store build number
         script: |
           cd "$CM_BUILD_DIR"
-          LATEST_BUILD_NUMBER=$(app-store-connect get-latest-app-store-build-number "$APP_STORE_APPLE_ID" --platform=IOS)
-          if [ -z "$LATEST_BUILD_NUMBER" ]; then
-            LATEST_BUILD_NUMBER=0
+          if ! LATEST_BUILD_NUMBER=$(app-store-connect get-latest-app-store-build-number "$APP_STORE_APPLE_ID" --platform=IOS); then
+            echo "No se pudo consultar el último build de App Store Connect."
+            exit 1
           fi
-          agvtool new-version -all $((LATEST_BUILD_NUMBER + 1))
+          if ! [[ "$LATEST_BUILD_NUMBER" =~ ^[0-9]+$ ]]; then
+            echo "Número de build recibido no válido: $LATEST_BUILD_NUMBER"
+            exit 1
+          fi
+
+          NEXT_BUILD_NUMBER=$((LATEST_BUILD_NUMBER + 1))
+          echo "App Store Connect tiene el build $LATEST_BUILD_NUMBER; se generará el build $NEXT_BUILD_NUMBER."
+          agvtool new-version -all "$NEXT_BUILD_NUMBER"
+
+          RESOLVED_BUILD_NUMBER=$(xcodebuild -project "$XCODE_PROJECT" -scheme "$XCODE_SCHEME" -showBuildSettings | awk '/CURRENT_PROJECT_VERSION/ { print $3; exit }')
+          if [ "$RESOLVED_BUILD_NUMBER" != "$NEXT_BUILD_NUMBER" ]; then
+            echo "El proyecto conserva el build $RESOLVED_BUILD_NUMBER en lugar de $NEXT_BUILD_NUMBER."
+            exit 1
+          fi
 
       - name: Build signed IPA
         script: |

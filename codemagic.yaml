@@ -50,7 +50,16 @@ workflows:
           fi
 
           NEXT_BUILD_NUMBER=$((LATEST_BUILD_NUMBER + 1))
-          echo "App Store Connect tiene el build $LATEST_BUILD_NUMBER; se generará el build $NEXT_BUILD_NUMBER."
+          CODEMAGIC_BUILD_NUMBER=${BUILD_NUMBER:-0}
+          if [[ "$CODEMAGIC_BUILD_NUMBER" =~ ^[0-9]+$ ]] && [ "$CODEMAGIC_BUILD_NUMBER" -gt "$NEXT_BUILD_NUMBER" ]; then
+            NEXT_BUILD_NUMBER=$CODEMAGIC_BUILD_NUMBER
+          fi
+          if [ "$NEXT_BUILD_NUMBER" -lt 2 ]; then
+            NEXT_BUILD_NUMBER=2
+          fi
+
+          echo "App Store Connect tiene el build $LATEST_BUILD_NUMBER."
+          echo "CodeMagic está ejecutando el build ${BUILD_NUMBER:-desconocido}; se generará el build $NEXT_BUILD_NUMBER."
           agvtool new-version -all "$NEXT_BUILD_NUMBER"
 
           RESOLVED_BUILD_NUMBER=$(xcodebuild -project "$XCODE_PROJECT" -scheme "$XCODE_SCHEME" -showBuildSettings | awk '/CURRENT_PROJECT_VERSION/ { print $3; exit }')
@@ -72,7 +81,13 @@ workflows:
           unzip -q "$IPA_PATH" -d "$VERIFY_DIR"
           APP_INFO=$(find "$VERIFY_DIR/Payload" -name Info.plist -print -quit)
           APP_DIR=$(dirname "$APP_INFO")
+          ARCHIVE_BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c "Print :CFBundleVersion" "$APP_INFO")
           ICON_NAME=$(/usr/libexec/PlistBuddy -c "Print :CFBundleIcons:CFBundlePrimaryIcon:CFBundleIconName" "$APP_INFO")
+          if ! [[ "$ARCHIVE_BUILD_NUMBER" =~ ^[0-9]+$ ]] || [ "$ARCHIVE_BUILD_NUMBER" -lt 2 ]; then
+            echo "El IPA contiene un número de build no válido: $ARCHIVE_BUILD_NUMBER"
+            exit 1
+          fi
+          echo "El IPA contiene el build $ARCHIVE_BUILD_NUMBER."
           if [ "$ICON_NAME" != "AppIcon" ]; then
             echo "App icon metadata is missing from the archived application."
             exit 1

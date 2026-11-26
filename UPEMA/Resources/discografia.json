@@ -1,6 +1,8 @@
 {
   "artista": "Un Pingüino en mi Ascensor",
   "generado_el": "2026-11-26",
+  "bandcamp_albumes_verificados_el": "2026-11-26",
+  "total_albumes_bandcamp_verificados": 7,
   "criterio": "Álbumes/EPs/recopilatorios principales listados en pingui.net y Bandcamp/Subterfuge hasta junio de 2026. Los singles sueltos y apariciones en recopilatorios de terceros se dejan fuera del bloque principal.",
   "fuentes_principales": [
     "https://www.pingui.net/basica.html",
@@ -6211,9 +6213,10 @@
     "Pegado text.txt (HTML Bandcamp Sex & Drugs & Nasal Pop)",
     "un_pinguino_discografia_fascinante_universo_actualizado.json",
     "Pegado text.txt (HTML Bandcamp Piromanía + extras)",
-    "discografia_nuevas_canciones_2026-11-26.json"
+    "discografia_nuevas_canciones_2026-11-26.json",
+    "Verificación de enlaces de álbum con la discografía oficial de upema.bandcamp.com (2026-11-26)"
   ],
-  "nota_enlaces": "Los track_url/download_url son enlaces estables a Bandcamp. Los mp3_128_url_temporal son URLs temporales de streaming extraídas del HTML de Bandcamp y pueden caducar.",
+  "nota_enlaces": "Los album_url, track_url y download_url son páginas estables de Bandcamp, pero no son archivos de audio directos. Los mp3_128_url_temporal son URLs directas de streaming extraídas del HTML de Bandcamp y pueden caducar.",
   "resumen_enlaces": {
     "canciones_en_albumes_con_algun_enlace_audio": 92,
     "total_enlaces_audio_integrados_en_albumes": 248,

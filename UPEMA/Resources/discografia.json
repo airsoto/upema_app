@@ -1,6 +1,6 @@
 {
   "artista": "Un Pingüino en mi Ascensor",
-  "generado_el": "2026-06-28",
+  "generado_el": "2026-11-26",
   "criterio": "Álbumes/EPs/recopilatorios principales listados en pingui.net y Bandcamp/Subterfuge hasta junio de 2026. Los singles sueltos y apariciones en recopilatorios de terceros se dejan fuera del bloque principal.",
   "fuentes_principales": [
     "https://www.pingui.net/basica.html",
@@ -3700,6 +3700,1899 @@
         }
       ],
       "total_canciones": 13
+    },
+    {
+      "titulo": "Concierto",
+      "tipo": "álbum",
+      "portada_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_concierto.png",
+      "canciones": [
+        {
+          "numero": 1,
+          "titulo": "1989. Arqueología En Mi Jardín. TV Gallega",
+          "slug": "1989_arqueologia_en_mi_jardin_tv_gallega",
+          "duracion_segundos": 188,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/1989.%20Arqueolog%C3%ADa%20en%20mi%20jard%C3%ADn.%20TV%20gallega.mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/1989.%20Arqueolog%C3%ADa%20en%20mi%20jard%C3%ADn.%20TV%20gallega.mp3",
+              "estable": true,
+              "seccion": "Concierto",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_concierto.png",
+              "imagen_alt": "1989. Arqueología En Mi Jardín. TV Gallega (Concierto)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 2,
+          "titulo": "Juegas Con Mi Corazón (Un Pingüino En Mi Ascensor). En Directo En Joy Eslava, 2 2 2007",
+          "slug": "juegas_con_mi_corazon_un_pinguino_en_mi_ascensor_en_directo_en_joy_eslava_2_2_2007",
+          "duracion_segundos": 218,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/juegas%20con%20mi%20corazo%CC%81n%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).%20En%20directo%20en%20Joy%20Eslava%2C%202-2-2007.mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/juegas%20con%20mi%20corazo%CC%81n%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).%20En%20directo%20en%20Joy%20Eslava%2C%202-2-2007.mp3",
+              "estable": true,
+              "seccion": "Concierto",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_concierto.png",
+              "imagen_alt": "Juegas Con Mi Corazón (Un Pingüino En Mi Ascensor). En Directo En Joy Eslava, 2 2 2007 (Concierto)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 3,
+          "titulo": "La Balada De Benito Carrizosa (Un Pingüino En Mi Ascensor), TV Gallega 1990",
+          "slug": "la_balada_de_benito_carrizosa_un_pinguino_en_mi_ascensor_tv_gallega_1990",
+          "duracion_segundos": 255,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/La%20Balada%20de%20Benito%20Carrizosa%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor)%2C%20TV%20Gallega%201990.mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/La%20Balada%20de%20Benito%20Carrizosa%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor)%2C%20TV%20Gallega%201990.mp3",
+              "estable": true,
+              "seccion": "Concierto",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_concierto.png",
+              "imagen_alt": "La Balada De Benito Carrizosa (Un Pingüino En Mi Ascensor), TV Gallega 1990 (Concierto)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 4,
+          "titulo": "Los Papeles De Regalo Navideños De Un Pingüino En Mi Ascensor",
+          "slug": "los_papeles_de_regalo_navidenos_de_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 93,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Los%20papeles%20de%20regalo%20navide%C3%B1os%20de%20Un%20Ping%C3%BCino%20en%20mi%20Ascensor.mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Los%20papeles%20de%20regalo%20navide%C3%B1os%20de%20Un%20Ping%C3%BCino%20en%20mi%20Ascensor.mp3",
+              "estable": true,
+              "seccion": "Concierto",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_concierto.png",
+              "imagen_alt": "Los Papeles De Regalo Navideños De Un Pingüino En Mi Ascensor (Concierto)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 5,
+          "titulo": "Un Pingüino En Mi Ascensor Pide Excusas Por La Campaña De Promoción Del Concierto En La Sala El Sol",
+          "slug": "un_pinguino_en_mi_ascensor_pide_excusas_por_la_campana_de_promocion_del_concierto_en_la_sala_el_sol",
+          "duracion_segundos": 38,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Un%20Ping%C3%BCino%20en%20mi%20Ascensor%20pide%20excusas%20por%20la%20campa%C3%B1a%20de%20promoci%C3%B3n%20del%20concierto%20en%20la%20sala%20El%20sol.mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Un%20Ping%C3%BCino%20en%20mi%20Ascensor%20pide%20excusas%20por%20la%20campa%C3%B1a%20de%20promoci%C3%B3n%20del%20concierto%20en%20la%20sala%20El%20sol.mp3",
+              "estable": true,
+              "seccion": "Concierto",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_concierto.png",
+              "imagen_alt": "Un Pingüino En Mi Ascensor Pide Excusas Por La Campaña De Promoción Del Concierto En La Sala El Sol (Concierto)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "Un Pingüino En Mi Ascensor Promo Concierto El Sol 23 6 2022",
+          "slug": "un_pinguino_en_mi_ascensor_promo_concierto_el_sol_23_6_2022",
+          "duracion_segundos": 110,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Un%20Ping%C3%BCino%20en%20mi%20Ascensor%20promo%20concierto%20El%20sol%2023-6-2022.mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Un%20Ping%C3%BCino%20en%20mi%20Ascensor%20promo%20concierto%20El%20sol%2023-6-2022.mp3",
+              "estable": true,
+              "seccion": "Concierto",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_concierto.png",
+              "imagen_alt": "Un Pingüino En Mi Ascensor Promo Concierto El Sol 23 6 2022 (Concierto)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 7,
+          "titulo": "Como Se Grabó El Primer Disco De Un Pingüino En Mi Ascensor",
+          "slug": "como_se_grabo_el_primer_disco_de_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 575,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Como%20se%20grab%C3%B3%20el%20primer%20disco%20de%20Un%20ping%C3%BCino%20en%20mi%20ascensor.mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Como%20se%20grab%C3%B3%20el%20primer%20disco%20de%20Un%20ping%C3%BCino%20en%20mi%20ascensor.mp3",
+              "estable": true,
+              "seccion": "Concierto",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_concierto.png",
+              "imagen_alt": "Como Se Grabó El Primer Disco De Un Pingüino En Mi Ascensor (Concierto)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        }
+      ]
+    },
+    {
+      "titulo": "Maquetas",
+      "tipo": "álbum",
+      "portada_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+      "canciones": [
+        {
+          "numero": 1,
+          "titulo": "Para Ti Que Solo Tienes 2015 Años Cumplidos",
+          "slug": "para_ti_que_solo_tienes_2015_anos_cumplidos",
+          "duracion_segundos": 256,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/_Para%20ti%20que%20solo%20tienes%202015%20a%C3%B1os%20cumplidos_.mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/_Para%20ti%20que%20solo%20tienes%202015%20a%C3%B1os%20cumplidos_.mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Para Ti Que Solo Tienes 2015 Años Cumplidos (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 2,
+          "titulo": "¡Antonio Lobato! (Un Pingüino En Mi Ascensor)",
+          "slug": "antonio_lobato_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 146,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/%C2%A1Antonio%20Lobato!%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/%C2%A1Antonio%20Lobato!%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "¡Antonio Lobato! (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 3,
+          "titulo": "¿Por Qué Están Tan Tristes Los Indies (Un Pingüino En Mi Ascensor)",
+          "slug": "por_que_estan_tan_tristes_los_indies_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 232,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/%C2%BFPor%20que%CC%81%20esta%CC%81n%20tan%20tristes%20los%20indies_%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/%C2%BFPor%20que%CC%81%20esta%CC%81n%20tan%20tristes%20los%20indies_%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "¿Por Qué Están Tan Tristes Los Indies (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 4,
+          "titulo": "¿Por Qué Ya No Salgo Tanto En El ¡Hola!",
+          "slug": "por_que_ya_no_salgo_tanto_en_el_hola",
+          "duracion_segundos": 186,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/%C2%BFPor%20que%CC%81%20ya%20no%20salgo%20tanto%20en%20el%20%C2%A1Hola!_.mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/%C2%BFPor%20que%CC%81%20ya%20no%20salgo%20tanto%20en%20el%20%C2%A1Hola!_.mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "¿Por Qué Ya No Salgo Tanto En El ¡Hola! (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 5,
+          "titulo": "¿Qué Fue De Aquella Tía Que Buscaba A Jacq´s (Un Pingüino En Mi Ascensor)",
+          "slug": "que_fue_de_aquella_tia_que_buscaba_a_jacq_s_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 164,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/%C2%BFQue%CC%81%20fue%20de%20aquella%20ti%CC%81a%20que%20buscaba%20a%20Jacq%C2%B4s_%20(Un%20ping%C3%BCino%20en%20mi%20ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/%C2%BFQue%CC%81%20fue%20de%20aquella%20ti%CC%81a%20que%20buscaba%20a%20Jacq%C2%B4s_%20(Un%20ping%C3%BCino%20en%20mi%20ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "¿Qué Fue De Aquella Tía Que Buscaba A Jacq´s (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "¿Qué Tiene Él Que No Tenga Yo (Un Pingüino En Mi Ascensor)",
+          "slug": "que_tiene_el_que_no_tenga_yo_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 140,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/%C2%BFQue%CC%81%20tiene%20e%CC%81l%20que%20no%20tenga%20yo_%20(Un%20ping%C3%BCino%20en%20mi%20ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/%C2%BFQue%CC%81%20tiene%20e%CC%81l%20que%20no%20tenga%20yo_%20(Un%20ping%C3%BCino%20en%20mi%20ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "¿Qué Tiene Él Que No Tenga Yo (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 7,
+          "titulo": "Apagón (Un Pingüino En Mi Ascensor)",
+          "slug": "apagon_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 210,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Apag%C3%B3n%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Apag%C3%B3n%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Apagón (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 8,
+          "titulo": "Aquí El Astronauta García (Un Pingüino En Mi Ascensor)",
+          "slug": "aqui_el_astronauta_garcia_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 251,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Aqui%CC%81%20el%20Astronauta%20Garci%CC%81a%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Aqui%CC%81%20el%20Astronauta%20Garci%CC%81a%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Aquí El Astronauta García (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 9,
+          "titulo": "Arqueología En Mi Jardín (Un Pingüino En Mi Ascensor)",
+          "slug": "arqueologia_en_mi_jardin_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 191,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Arqueologi%CC%81a%20en%20mi%20jard%C3%ADn%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Arqueologi%CC%81a%20en%20mi%20jard%C3%ADn%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Arqueología En Mi Jardín (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 10,
+          "titulo": "Asaltar El Capitolio (Versión Maqueta)",
+          "slug": "asaltar_el_capitolio_version_maqueta",
+          "duracion_segundos": 138,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Asaltar%20el%20Capitolio%20(Versi%C3%B3n%20maqueta).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Asaltar%20el%20Capitolio%20(Versi%C3%B3n%20maqueta).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Asaltar El Capitolio (Versión Maqueta) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 11,
+          "titulo": "Astronauta GarcIA, El Videoclip (Un Pingüino En Mi Ascensor)",
+          "slug": "astronauta_garcia_el_videoclip_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 255,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Astronauta%20GarcIA%2C%20el%20videoclip%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Astronauta%20GarcIA%2C%20el%20videoclip%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Astronauta GarcIA, El Videoclip (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 12,
+          "titulo": "Aureliano Ouriña (Un Pingüino En Mi Ascensor)",
+          "slug": "aureliano_ourina_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 170,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Aureliano%20Ouri%C3%B1a%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Aureliano%20Ouri%C3%B1a%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Aureliano Ouriña (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 13,
+          "titulo": "Billy Joe Presidente (Un Pingüino En Mi Ascensor)",
+          "slug": "billy_joe_presidente_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 174,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Billy%20Joe%20Presidente%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Billy%20Joe%20Presidente%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Billy Joe Presidente (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 14,
+          "titulo": "Cada Noche Me Suicido (Un Pingüino En Mi Ascensor)",
+          "slug": "cada_noche_me_suicido_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 180,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Cada%20noche%20me%20suicido%20(Un%20ping%C3%BCino%20en%20mi%20ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Cada%20noche%20me%20suicido%20(Un%20ping%C3%BCino%20en%20mi%20ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Cada Noche Me Suicido (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 15,
+          "titulo": "Como Un Calcetín Desparejado (Un Pingüino En Mi Ascensor)",
+          "slug": "como_un_calcetin_desparejado_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 187,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Como%20un%20calceti%CC%81n%20desparejado%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Como%20un%20calceti%CC%81n%20desparejado%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Como Un Calcetín Desparejado (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 16,
+          "titulo": "Como Yo Te Odio (Un Pingüino En Mi Ascensor)",
+          "slug": "como_yo_te_odio_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 194,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Como%20yo%20te%20odio%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Como%20yo%20te%20odio%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Como Yo Te Odio (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 17,
+          "titulo": "Cosas Que Te Interesan Más Que Yo (Un PIngüino En Mi Ascensor)",
+          "slug": "cosas_que_te_interesan_mas_que_yo_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 138,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Cosas%20que%20te%20interesan%20ma%CC%81s%20que%20yo%20(Un%20PIng%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Cosas%20que%20te%20interesan%20ma%CC%81s%20que%20yo%20(Un%20PIng%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Cosas Que Te Interesan Más Que Yo (Un PIngüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 18,
+          "titulo": "El Hombre De La Grua",
+          "slug": "el_hombre_de_la_grua",
+          "duracion_segundos": 237,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/el%20hombre%20de%20la%20grua.mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/el%20hombre%20de%20la%20grua.mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "El Hombre De La Grua (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 19,
+          "titulo": "El Hombre Invisible (Un Pingüino En Mi Ascensor)",
+          "slug": "el_hombre_invisible_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 213,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/El%20Hombre%20Invisible%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/El%20Hombre%20Invisible%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "El Hombre Invisible (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 20,
+          "titulo": "El Letrista Perezoso (Un Pingüino En Mi Ascensor)",
+          "slug": "el_letrista_perezoso_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 115,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/El%20letrista%20perezoso%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/El%20letrista%20perezoso%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "El Letrista Perezoso (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 21,
+          "titulo": "El Sangriento Final De Bobby Johnson (El Videoclip)",
+          "slug": "el_sangriento_final_de_bobby_johnson_el_videoclip",
+          "duracion_segundos": 151,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/El%20sangriento%20final%20de%20Bobby%20Johnson%20(El%20videoclip).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/El%20sangriento%20final%20de%20Bobby%20Johnson%20(El%20videoclip).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "El Sangriento Final De Bobby Johnson (El Videoclip) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 22,
+          "titulo": "En La Cola Del Everest (Un Pingüino En Mi Ascensor)",
+          "slug": "en_la_cola_del_everest_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 225,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/En%20la%20cola%20del%20everest%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/En%20la%20cola%20del%20everest%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "En La Cola Del Everest (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 23,
+          "titulo": "En Mis Sueños (Un Pingüino En Mi Ascensor)",
+          "slug": "en_mis_suenos_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 219,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/En%20mis%20sue%C3%B1os%20(Un%20ping%C3%BCino%20en%20mi%20ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/En%20mis%20sue%C3%B1os%20(Un%20ping%C3%BCino%20en%20mi%20ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "En Mis Sueños (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 24,
+          "titulo": "Esta Navidad No Deberia Haber Piedad",
+          "slug": "esta_navidad_no_deberia_haber_piedad",
+          "duracion_segundos": 175,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/esta%20navidad%20no%20deberia%20haber%20piedad.mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/esta%20navidad%20no%20deberia%20haber%20piedad.mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Esta Navidad No Deberia Haber Piedad (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 25,
+          "titulo": "Estimado Director Provincial (Un Pingüino En Mi Ascensor)",
+          "slug": "estimado_director_provincial_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 157,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Estimado%20Director%20Provincial%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Estimado%20Director%20Provincial%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Estimado Director Provincial (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 26,
+          "titulo": "Frodo Tira El Anillo (Un Pingüino En Mi Ascensor)",
+          "slug": "frodo_tira_el_anillo_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 119,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Frodo%20tira%20el%20anillo%20(Un%20ping%C3%BCino%20en%20mi%20ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Frodo%20tira%20el%20anillo%20(Un%20ping%C3%BCino%20en%20mi%20ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Frodo Tira El Anillo (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 27,
+          "titulo": "Gaspar Melchor De Jovellanos",
+          "slug": "gaspar_melchor_de_jovellanos",
+          "duracion_segundos": 136,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Gaspar%20Melchor%20de%20Jovellanos.mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Gaspar%20Melchor%20de%20Jovellanos.mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Gaspar Melchor De Jovellanos (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 28,
+          "titulo": "Hace Sol Y Es Viernes (Un Pingüino En Mi Ascensor)",
+          "slug": "hace_sol_y_es_viernes_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 173,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Hace%20sol%20y%20es%20viernes%20(Un%20ping%C3%BCino%20en%20mi%20ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Hace%20sol%20y%20es%20viernes%20(Un%20ping%C3%BCino%20en%20mi%20ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Hace Sol Y Es Viernes (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 29,
+          "titulo": "Heman Y Barbie, La Historia (Un Pingüino En Mi Ascensor)",
+          "slug": "heman_y_barbie_la_historia_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 500,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Heman%20y%20Barbie%2C%20la%20historia%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Heman%20y%20Barbie%2C%20la%20historia%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Heman Y Barbie, La Historia (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 30,
+          "titulo": "Jota Jota (Un Pingüino En Mi Ascensor), Historia Y Curiosidades",
+          "slug": "jota_jota_un_pinguino_en_mi_ascensor_historia_y_curiosidades",
+          "duracion_segundos": 337,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Jota%20Jota%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor)%2C%20historia%20y%20curiosidades.mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Jota%20Jota%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor)%2C%20historia%20y%20curiosidades.mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Jota Jota (Un Pingüino En Mi Ascensor), Historia Y Curiosidades (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 31,
+          "titulo": "La Cosmética Es Tan Poética (Un Pingüino En Mi Ascensor)",
+          "slug": "la_cosmetica_es_tan_poetica_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 205,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/La%20cosme%CC%81tica%20es%20tan%20po%C3%A9tica%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/La%20cosme%CC%81tica%20es%20tan%20po%C3%A9tica%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "La Cosmética Es Tan Poética (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 32,
+          "titulo": "La Inapreciable Metamorfosis De Antón Guaracha (Un Pingüino En Mi Ascensor)",
+          "slug": "la_inapreciable_metamorfosis_de_anton_guaracha_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 125,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/La%20inapreciable%20metamorfosis%20de%20Anto%CC%81n%20Guaracha%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/La%20inapreciable%20metamorfosis%20de%20Anto%CC%81n%20Guaracha%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "La Inapreciable Metamorfosis De Antón Guaracha (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 33,
+          "titulo": "La Prima Macarena (Un Pingüino En Mi Ascensor)",
+          "slug": "la_prima_macarena_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 179,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/La%20prima%20Macarena%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/La%20prima%20Macarena%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "La Prima Macarena (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 34,
+          "titulo": "La Rueda Del Hamster (Un Pingüino En Mi Ascensor)",
+          "slug": "la_rueda_del_hamster_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 148,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/La%20rueda%20del%20hamster%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/La%20rueda%20del%20hamster%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "La Rueda Del Hamster (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 35,
+          "titulo": "La Venganza De Miss Melilla, El Videoclip (Un Pingüino En Mi Ascensor)",
+          "slug": "la_venganza_de_miss_melilla_el_videoclip_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 153,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/La%20venganza%20de%20Miss%20Melilla%2C%20el%20videoclip%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/La%20venganza%20de%20Miss%20Melilla%2C%20el%20videoclip%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "La Venganza De Miss Melilla, El Videoclip (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 36,
+          "titulo": "Los Expertos Alertan (Un Pingüino En Mi Ascensor)",
+          "slug": "los_expertos_alertan_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 224,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Los%20expertos%20alertan%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Los%20expertos%20alertan%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Los Expertos Alertan (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 37,
+          "titulo": "Los Malos Te Gustan Más (Un Pingüino En Mi Ascensor)",
+          "slug": "los_malos_te_gustan_mas_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 181,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Los%20malos%20te%20gustan%20ma%CC%81s%20(Un%20ping%C3%BCino%20en%20mi%20ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Los%20malos%20te%20gustan%20ma%CC%81s%20(Un%20ping%C3%BCino%20en%20mi%20ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Los Malos Te Gustan Más (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 38,
+          "titulo": "Negacionista De Ti (Un Pingüino En Mi Ascensor)",
+          "slug": "negacionista_de_ti_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 85,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Negacionista%20de%20ti%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Negacionista%20de%20ti%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Negacionista De Ti (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 39,
+          "titulo": "No Le Canto Al Amor (Un Pingüino En Mi Ascensor)",
+          "slug": "no_le_canto_al_amor_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 188,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/No%20le%20canto%20al%20amor%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/No%20le%20canto%20al%20amor%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "No Le Canto Al Amor (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 40,
+          "titulo": "No Os Creáis Que Mola Tanto Vivir En Andorra (Un Pingüino En Mi Ascensor)",
+          "slug": "no_os_creais_que_mola_tanto_vivir_en_andorra_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 177,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/No%20os%20cre%C3%A1is%20que%20mola%20tanto%20vivir%20en%20Andorra%20(Un%20ping%C3%BCino%20en%20mi%20ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/No%20os%20cre%C3%A1is%20que%20mola%20tanto%20vivir%20en%20Andorra%20(Un%20ping%C3%BCino%20en%20mi%20ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "No Os Creáis Que Mola Tanto Vivir En Andorra (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 41,
+          "titulo": "Nunca Acabes Con Una Triste (Un Pingüino En Mi Ascensor)",
+          "slug": "nunca_acabes_con_una_triste_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 184,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Nunca%20acabes%20con%20una%20triste%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Nunca%20acabes%20con%20una%20triste%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Nunca Acabes Con Una Triste (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 42,
+          "titulo": "Popurrí Barbenheimer (Un Pingüino En Mi Ascensor)",
+          "slug": "popurri_barbenheimer_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 107,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Popurr%C3%AD%20Barbenheimer%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Popurr%C3%AD%20Barbenheimer%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Popurrí Barbenheimer (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 43,
+          "titulo": "Sargento Perales (Un Pingüino En Mi Ascensor)",
+          "slug": "sargento_perales_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 169,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Sargento%20Perales%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Sargento%20Perales%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Sargento Perales (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 44,
+          "titulo": "Secuestrado Por Tu Amor (Un Pingüino En Mi Ascensor)",
+          "slug": "secuestrado_por_tu_amor_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 214,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Secuestrado%20por%20tu%20amor%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Secuestrado%20por%20tu%20amor%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Secuestrado Por Tu Amor (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 45,
+          "titulo": "Supergilipollas (Un Pingüino En Mi Ascensor)",
+          "slug": "supergilipollas_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 170,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Supergilipollas%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Supergilipollas%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Supergilipollas (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 46,
+          "titulo": "Tengo Un Fan En Omán (Un Pingüino En Mi Ascensor)",
+          "slug": "tengo_un_fan_en_oman_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 162,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Tengo%20un%20fan%20en%20Om%C3%A1n%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Tengo%20un%20fan%20en%20Om%C3%A1n%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Tengo Un Fan En Omán (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 47,
+          "titulo": "Tu Carnicero Particular, Featuring Christopher Lee",
+          "slug": "tu_carnicero_particular_featuring_christopher_lee",
+          "duracion_segundos": 245,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Tu%20carnicero%20particular%2C%20featuring%20Christopher%20Lee.mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Tu%20carnicero%20particular%2C%20featuring%20Christopher%20Lee.mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Tu Carnicero Particular, Featuring Christopher Lee (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 48,
+          "titulo": "Un Pingüino En Mi Ascensor Asintomático",
+          "slug": "un_pinguino_en_mi_ascensor_asintomatico",
+          "duracion_segundos": 178,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Un%20Ping%C3%BCino%20En%20Mi%20Ascensor%20-%20Asintoma%CC%81tico.mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Un%20Ping%C3%BCino%20En%20Mi%20Ascensor%20-%20Asintoma%CC%81tico.mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Un Pingüino En Mi Ascensor Asintomático (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 49,
+          "titulo": "Vuelo En Ryan Air",
+          "slug": "vuelo_en_ryan_air",
+          "duracion_segundos": 236,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Vuelo%20en%20Ryan%20Air.mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Vuelo%20en%20Ryan%20Air.mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Vuelo En Ryan Air (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 50,
+          "titulo": "Y A Mí Qué Coño Me Importa Que No Seas De Verdad (Un Pingüino En Mi Ascensor)",
+          "slug": "y_a_mi_que_cono_me_importa_que_no_seas_de_verdad_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 178,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Y%20a%20mi%CC%81%20qu%C3%A9%20con%CC%83o%20me%20importa%20que%20no%20seas%20de%20verdad%20(Un%20ping%C3%BCino%20en%20mi%20ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Y%20a%20mi%CC%81%20qu%C3%A9%20con%CC%83o%20me%20importa%20que%20no%20seas%20de%20verdad%20(Un%20ping%C3%BCino%20en%20mi%20ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Y A Mí Qué Coño Me Importa Que No Seas De Verdad (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 51,
+          "titulo": "Yo Quiero Que Me Llames Tu Pero Solo Me Llama Vodafón (Un Pingüino En Mi Ascensor)",
+          "slug": "yo_quiero_que_me_llames_tu_pero_solo_me_llama_vodafon_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 109,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Yo%20quiero%20que%20me%20llames%20tu%20pero%20solo%20me%20llama%20Vodaf%C3%B3n%20(Un%20ping%C3%BCino%20en%20mi%20ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Yo%20quiero%20que%20me%20llames%20tu%20pero%20solo%20me%20llama%20Vodaf%C3%B3n%20(Un%20ping%C3%BCino%20en%20mi%20ascensor).mp3",
+              "estable": true,
+              "seccion": "Maquetas",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_maqueta.png",
+              "imagen_alt": "Yo Quiero Que Me Llames Tu Pero Solo Me Llama Vodafón (Un Pingüino En Mi Ascensor) (Maquetas)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        }
+      ]
+    },
+    {
+      "titulo": "Libro de letras",
+      "tipo": "álbum",
+      "portada_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_libro_letras.png",
+      "canciones": [
+        {
+          "numero": 15,
+          "titulo": "Carretera De Una Sola Direccion",
+          "slug": "carretera_de_una_sola_direccion",
+          "duracion_segundos": 66,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/carretera%20de%20una%20sola%20direccion.mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/carretera%20de%20una%20sola%20direccion.mp3",
+              "estable": true,
+              "seccion": "Libro de letras",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_libro_letras.png",
+              "imagen_alt": "Carretera De Una Sola Direccion (Libro de letras)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 16,
+          "titulo": "Cheiw Junior",
+          "slug": "cheiw_junior",
+          "duracion_segundos": 20,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/cheiw%20junior.mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/cheiw%20junior.mp3",
+              "estable": true,
+              "seccion": "Libro de letras",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_libro_letras.png",
+              "imagen_alt": "Cheiw Junior (Libro de letras)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 17,
+          "titulo": "Chispas",
+          "slug": "chispas",
+          "duracion_segundos": 36,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/chispas.mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/chispas.mp3",
+              "estable": true,
+              "seccion": "Libro de letras",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_libro_letras.png",
+              "imagen_alt": "Chispas (Libro de letras)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 18,
+          "titulo": "Cupra De Segunda Mano (pingüinerias)",
+          "slug": "cupra_de_segunda_mano_pinguinerias",
+          "duracion_segundos": 27,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/cupra%20de%20segunda%20mano%20(ping%C3%BCinerias).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/cupra%20de%20segunda%20mano%20(ping%C3%BCinerias).mp3",
+              "estable": true,
+              "seccion": "Libro de letras",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_libro_letras.png",
+              "imagen_alt": "Cupra De Segunda Mano (pingüinerias) (Libro de letras)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 19,
+          "titulo": "De Un Moro",
+          "slug": "de_un_moro",
+          "duracion_segundos": 20,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/de%20un%20moro.mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/de%20un%20moro.mp3",
+              "estable": true,
+              "seccion": "Libro de letras",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_libro_letras.png",
+              "imagen_alt": "De Un Moro (Libro de letras)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 20,
+          "titulo": "El Boton Del Semaforo",
+          "slug": "el_boton_del_semaforo",
+          "duracion_segundos": 27,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/el%20boton%20del%20semaforo.mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/el%20boton%20del%20semaforo.mp3",
+              "estable": true,
+              "seccion": "Libro de letras",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_libro_letras.png",
+              "imagen_alt": "El Boton Del Semaforo (Libro de letras)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 21,
+          "titulo": "El Violinista (obra Social)",
+          "slug": "el_violinista_obra_social",
+          "duracion_segundos": 114,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/el%20violinista%20(obra%20social).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/el%20violinista%20(obra%20social).mp3",
+              "estable": true,
+              "seccion": "Libro de letras",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_libro_letras.png",
+              "imagen_alt": "El Violinista (obra Social) (Libro de letras)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 30,
+          "titulo": "Hoy Es Lunes (secuelas)",
+          "slug": "hoy_es_lunes_secuelas",
+          "duracion_segundos": 134,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/hoy%20es%20lunes%20(secuelas).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/hoy%20es%20lunes%20(secuelas).mp3",
+              "estable": true,
+              "seccion": "Libro de letras",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_libro_letras.png",
+              "imagen_alt": "Hoy Es Lunes (secuelas) (Libro de letras)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 31,
+          "titulo": "Los Padres Mas Felices Del Mundo",
+          "slug": "los_padres_mas_felices_del_mundo",
+          "duracion_segundos": 169,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/los%20padres%20mas%20felices%20del%20mundo.mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/los%20padres%20mas%20felices%20del%20mundo.mp3",
+              "estable": true,
+              "seccion": "Libro de letras",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_libro_letras.png",
+              "imagen_alt": "Los Padres Mas Felices Del Mundo (Libro de letras)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 32,
+          "titulo": "No Te Cases Con El Follame A Mi",
+          "slug": "no_te_cases_con_el_follame_a_mi",
+          "duracion_segundos": 58,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/no%20te%20cases%20con%20el%20follame%20a%20mi.mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/no%20te%20cases%20con%20el%20follame%20a%20mi.mp3",
+              "estable": true,
+              "seccion": "Libro de letras",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_libro_letras.png",
+              "imagen_alt": "No Te Cases Con El Follame A Mi (Libro de letras)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 33,
+          "titulo": "Peluqueros Españoles (obra Social)",
+          "slug": "peluqueros_espanoles_obra_social",
+          "duracion_segundos": 125,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/peluqueros%20espa%C3%B1oles%20(obra%20social).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/peluqueros%20espa%C3%B1oles%20(obra%20social).mp3",
+              "estable": true,
+              "seccion": "Libro de letras",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_libro_letras.png",
+              "imagen_alt": "Peluqueros Españoles (obra Social) (Libro de letras)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 34,
+          "titulo": "Que Monos Son Los Bebes (pingüinerias)",
+          "slug": "que_monos_son_los_bebes_pinguinerias",
+          "duracion_segundos": 33,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/que%20monos%20son%20los%20bebes%20(ping%C3%BCinerias).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/que%20monos%20son%20los%20bebes%20(ping%C3%BCinerias).mp3",
+              "estable": true,
+              "seccion": "Libro de letras",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_libro_letras.png",
+              "imagen_alt": "Que Monos Son Los Bebes (pingüinerias) (Libro de letras)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 35,
+          "titulo": "Que No Me Hables (Un Pingüino En Mi Ascensor)",
+          "slug": "que_no_me_hables_un_pinguino_en_mi_ascensor",
+          "duracion_segundos": 106,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Que%20no%20me%20hables%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/Que%20no%20me%20hables%20(Un%20Ping%C3%BCino%20en%20mi%20Ascensor).mp3",
+              "estable": true,
+              "seccion": "Libro de letras",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_libro_letras.png",
+              "imagen_alt": "Que No Me Hables (Un Pingüino En Mi Ascensor) (Libro de letras)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 43,
+          "titulo": "Rosa Y Verde",
+          "slug": "rosa_y_verde",
+          "duracion_segundos": 75,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/rosa%20y%20verde.mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/rosa%20y%20verde.mp3",
+              "estable": true,
+              "seccion": "Libro de letras",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_libro_letras.png",
+              "imagen_alt": "Rosa Y Verde (Libro de letras)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 44,
+          "titulo": "Te Quiero(obra Social)",
+          "slug": "te_quiero_obra_social",
+          "duracion_segundos": 81,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/te%20quiero(obra%20social).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/te%20quiero(obra%20social).mp3",
+              "estable": true,
+              "seccion": "Libro de letras",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_libro_letras.png",
+              "imagen_alt": "Te Quiero(obra Social) (Libro de letras)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 45,
+          "titulo": "Tu Gorro (obra Social)",
+          "slug": "tu_gorro_obra_social",
+          "duracion_segundos": 31,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/tu%20gorro%20(obra%20social).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/tu%20gorro%20(obra%20social).mp3",
+              "estable": true,
+              "seccion": "Libro de letras",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_libro_letras.png",
+              "imagen_alt": "Tu Gorro (obra Social) (Libro de letras)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 46,
+          "titulo": "Tu Morro (obra Social)",
+          "slug": "tu_morro_obra_social",
+          "duracion_segundos": 13,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/tu%20morro%20(obra%20social).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/tu%20morro%20(obra%20social).mp3",
+              "estable": true,
+              "seccion": "Libro de letras",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_libro_letras.png",
+              "imagen_alt": "Tu Morro (obra Social) (Libro de letras)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 47,
+          "titulo": "Un Porro (obra Social)",
+          "slug": "un_porro_obra_social",
+          "duracion_segundos": 27,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/un%20porro%20(obra%20social).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/un%20porro%20(obra%20social).mp3",
+              "estable": true,
+              "seccion": "Libro de letras",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_libro_letras.png",
+              "imagen_alt": "Un Porro (obra Social) (Libro de letras)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 51,
+          "titulo": "Y A Mi Que",
+          "slug": "y_a_mi_que",
+          "duracion_segundos": 81,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/y%20a%20mi%20que.mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/y%20a%20mi%20que.mp3",
+              "estable": true,
+              "seccion": "Libro de letras",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_libro_letras.png",
+              "imagen_alt": "Y A Mi Que (Libro de letras)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        },
+        {
+          "numero": 52,
+          "titulo": "Y Quien Es El (secuelas)",
+          "slug": "y_quien_es_el_secuelas",
+          "duracion_segundos": 135,
+          "pingui_mp3_url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/y%20quien%20es%20el%20(secuelas).mp3",
+          "enlaces_audio": [
+            {
+              "tipo": "mp3",
+              "fuente": "GitHub upema_app",
+              "url": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/y%20quien%20es%20el%20(secuelas).mp3",
+              "estable": true,
+              "seccion": "Libro de letras",
+              "referencia": "Un Pingüino en mi Ascensor",
+              "descripcion": "",
+              "imagen": "https://raw.githubusercontent.com/airsoto/upema_app/main/UPEMA/Resources/mp3nuevos/pinguino_libro_letras.png",
+              "imagen_alt": "Y Quien Es El (secuelas) (Libro de letras)"
+            }
+          ],
+          "fuentes_enlaces": [
+            "github_mp3nuevos"
+          ],
+          "letra": ""
+        }
+      ]
     }
   ],
   "recopilaciones_y_ediciones": [
@@ -4233,7 +6126,7 @@
       "total_canciones": 12
     }
   ],
-  "total_albumes_principales": 15,
+  "total_albumes_principales": 18,
   "total_recopilaciones_y_ediciones": 8,
   "canciones_sueltas_con_audio": [
     {
@@ -4317,7 +6210,8 @@
     "un_pinguino_discografia_blanca_navidad_actualizado.json",
     "Pegado text.txt (HTML Bandcamp Sex & Drugs & Nasal Pop)",
     "un_pinguino_discografia_fascinante_universo_actualizado.json",
-    "Pegado text.txt (HTML Bandcamp Piromanía + extras)"
+    "Pegado text.txt (HTML Bandcamp Piromanía + extras)",
+    "discografia_nuevas_canciones_2026-11-26.json"
   ],
   "nota_enlaces": "Los track_url/download_url son enlaces estables a Bandcamp. Los mp3_128_url_temporal son URLs temporales de streaming extraídas del HTML de Bandcamp y pueden caducar.",
   "resumen_enlaces": {
@@ -4341,6 +6235,13 @@
       "¿Quién coño es Emilio Tuchi? (extra)",
       "Fichar a Punset de director de marketing de Bimbo (extra)",
       "Mi chica me dejó (extra)"
-    ]
+    ],
+    "nuevos_albumes_github_anadidos": 3,
+    "nuevas_canciones_github_anadidas": 78,
+    "nuevas_canciones_github_por_album": {
+      "Concierto": 7,
+      "Maquetas": 51,
+      "Libro de letras": 20
+    }
   }
 }

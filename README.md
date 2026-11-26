@@ -1,6 +1,6 @@
 # Un Pingüino En Mi Ascensor para iPhone
 
-Reproductor nativo en SwiftUI para explorar la discografía de **Un Pingüino en mi Ascensor**. Incluye 15 álbumes y 180 canciones del catálogo facilitado, letras, búsqueda, listas personalizadas, historia del grupo y un reproductor persistente con controles de pantalla bloqueada.
+Reproductor nativo en SwiftUI para explorar la discografía de **Un Pingüino en mi Ascensor**. Incluye 18 álbumes y 258 canciones del catálogo facilitado, letras, búsqueda, listas personalizadas, historia del grupo y un reproductor persistente con controles de pantalla bloqueada.
 
 ## Funciones
 

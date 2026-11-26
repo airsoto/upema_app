@@ -59,7 +59,7 @@ struct HomeView: View {
             Image(systemName: "music.note.house.fill").font(.system(size: 150)).foregroundStyle(.black.opacity(0.13)).offset(x: 190, y: -15)
             VStack(alignment: .leading, spacing: 10) {
                 Text("UN PINGÜINO EN\nMI ASCENSOR").font(.system(size: 31, weight: .black, design: .rounded)).tracking(-1.3)
-                Text("15 álbumes · 180 canciones · letras y rarezas").font(.subheadline).foregroundStyle(.white.opacity(0.82))
+                Text("18 álbumes · 258 canciones · letras y rarezas").font(.subheadline).foregroundStyle(.white.opacity(0.82))
                 HStack {
                     Button { player.playAll(catalog.playableSongs) } label: { Label("Reproducir", systemImage: "play.fill") }
                         .buttonStyle(.borderedProminent).tint(.white).foregroundStyle(.black)
@@ -76,4 +76,3 @@ struct HomeView: View {
         VStack(alignment: .leading, spacing: 3) { Text(title).font(.title2.bold()); Text(caption).font(.subheadline).foregroundStyle(.secondary) }
     }
 }
-

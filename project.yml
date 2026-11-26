@@ -24,6 +24,8 @@ targets:
           - Info.plist
       - path: UPEMA/Resources
         buildPhase: resources
+        excludes:
+          - mp3nuevos
       - path: UPEMA/Assets.xcassets
         buildPhase: resources
       - path: UPEMA/PrivacyInfo.xcprivacy

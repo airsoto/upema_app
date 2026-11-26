@@ -1,0 +1,963 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catalogador MP3 · UPEMA</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #21172b;
+      --muted: #706878;
+      --paper: #fff9fc;
+      --panel: #ffffff;
+      --line: #eadce8;
+      --purple: #6d3dc2;
+      --purple-dark: #4e278f;
+      --pink: #db4f98;
+      --green: #21845c;
+      --orange: #bd651f;
+      --danger: #b4364c;
+      --shadow: 0 18px 50px rgba(62, 32, 76, .12);
+      font-family: Inter, ui-rounded, "SF Pro Rounded", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      min-height: 100vh;
+      color: var(--ink);
+      background: #f8eef7;
+    }
+
+    button, input, select, textarea { font: inherit; }
+    button, label[for="folderInput"], label[for="importInput"] { cursor: pointer; }
+    button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, summary:focus-visible {
+      outline: 3px solid rgba(109, 61, 194, .24);
+      outline-offset: 2px;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 16px clamp(18px, 4vw, 54px);
+      color: white;
+      background: #321a47;
+      border-bottom: 4px solid #d94d96;
+    }
+
+    .brand { display: flex; align-items: center; gap: 13px; }
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      border: 2px solid rgba(255,255,255,.55);
+      border-radius: 14px;
+      background: #6d3dc2;
+      font-size: 24px;
+    }
+    .brand strong { display: block; font-size: 1.05rem; }
+    .brand span { display: block; margin-top: 2px; color: #e8d9ee; font-size: .82rem; }
+    .top-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 9px; }
+
+    .button {
+      min-height: 42px;
+      padding: 9px 15px;
+      border: 1px solid transparent;
+      border-radius: 12px;
+      font-weight: 750;
+      transition: transform .16s ease, background .16s ease, border-color .16s ease;
+    }
+    .button:hover { transform: translateY(-1px); }
+    .button.primary { color: white; background: var(--pink); }
+    .button.secondary { color: white; border-color: rgba(255,255,255,.35); background: rgba(255,255,255,.1); }
+    .button.light { color: var(--purple-dark); border-color: #d8c5e6; background: white; }
+    .button.danger { color: var(--danger); border-color: #efc9d0; background: #fff7f8; }
+    .button:disabled { cursor: not-allowed; opacity: .45; transform: none; }
+
+    .page { width: min(1500px, 100%); margin: 0 auto; padding: 28px clamp(16px, 3vw, 42px) 80px; }
+
+    .intro {
+      display: grid;
+      grid-template-columns: 1.35fr .65fr;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+    .hero, .stats-card, .panel, details.settings {
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+    .hero { padding: clamp(24px, 4vw, 42px); overflow: hidden; position: relative; }
+    .hero::after {
+      content: "♫";
+      position: absolute;
+      right: 28px;
+      bottom: -36px;
+      color: #f2ddea;
+      font-size: 150px;
+      font-weight: 900;
+      transform: rotate(-8deg);
+      pointer-events: none;
+    }
+    .eyebrow { margin: 0 0 10px; color: var(--pink); font-size: .78rem; font-weight: 850; letter-spacing: .11em; text-transform: uppercase; }
+    h1 { max-width: 760px; margin: 0; font-size: clamp(2rem, 4vw, 4rem); line-height: .98; letter-spacing: -.045em; }
+    .hero p:last-of-type { max-width: 760px; margin: 18px 0 0; color: var(--muted); font-size: 1rem; line-height: 1.65; }
+
+    .stats-card { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; overflow: hidden; background: var(--line); }
+    .stat { display: flex; flex-direction: column; justify-content: center; min-height: 112px; padding: 22px; background: white; }
+    .stat strong { font-size: clamp(1.7rem, 3vw, 2.5rem); }
+    .stat span { margin-top: 4px; color: var(--muted); font-size: .85rem; }
+
+    details.settings { margin-bottom: 24px; overflow: hidden; }
+    details.settings summary { padding: 18px 22px; font-weight: 800; list-style: none; }
+    details.settings summary::-webkit-details-marker { display: none; }
+    details.settings summary::after { content: "⌄"; float: right; color: var(--purple); font-size: 1.2rem; }
+    details.settings[open] summary { border-bottom: 1px solid var(--line); }
+    .settings-body { padding: 22px; }
+    .repo-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-bottom: 22px; }
+    .album-settings { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .album-config { padding: 16px; border: 1px solid var(--line); border-radius: 18px; background: var(--paper); }
+    .album-config h3 { margin: 0 0 14px; font-size: 1rem; }
+    .mini-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 11px; }
+    .mini-grid .wide { grid-column: 1 / -1; }
+
+    .workspace { display: grid; grid-template-columns: minmax(300px, .74fr) minmax(480px, 1.26fr); gap: 22px; align-items: start; }
+    .panel { overflow: hidden; }
+    .panel-head { padding: 19px 20px; border-bottom: 1px solid var(--line); }
+    .panel-head h2 { margin: 0; font-size: 1.15rem; }
+    .panel-head p { margin: 5px 0 0; color: var(--muted); font-size: .85rem; }
+
+    .filters { display: grid; grid-template-columns: 1fr 150px; gap: 10px; padding: 14px; border-bottom: 1px solid var(--line); background: var(--paper); }
+    .track-list { max-height: calc(100vh - 285px); min-height: 420px; overflow: auto; }
+    .empty-state { display: grid; place-items: center; min-height: 420px; padding: 40px; color: var(--muted); text-align: center; }
+    .empty-state strong { display: block; margin-bottom: 8px; color: var(--ink); font-size: 1.1rem; }
+
+    .track-item {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 38px minmax(0, 1fr) auto;
+      gap: 11px;
+      align-items: center;
+      padding: 13px 15px;
+      border: 0;
+      border-bottom: 1px solid #f0e7ee;
+      color: inherit;
+      text-align: left;
+      background: white;
+    }
+    .track-item:hover { background: #fff8fc; }
+    .track-item.active { box-shadow: inset 4px 0 var(--pink); background: #fbf3ff; }
+    .track-index { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 11px; color: var(--purple-dark); background: #eee3f8; font-size: .78rem; font-weight: 850; }
+    .track-copy { min-width: 0; }
+    .track-copy strong { display: block; overflow: hidden; font-size: .9rem; text-overflow: ellipsis; white-space: nowrap; }
+    .track-copy span { display: block; overflow: hidden; margin-top: 4px; color: var(--muted); font-size: .74rem; text-overflow: ellipsis; white-space: nowrap; }
+    .state-dot { width: 11px; height: 11px; border: 2px solid #c9bfc8; border-radius: 50%; }
+    .state-dot.ready { border-color: var(--green); background: var(--green); }
+    .state-dot.partial { border-color: var(--orange); background: #f6c58d; }
+
+    .editor-empty { display: grid; place-items: center; min-height: 600px; padding: 40px; text-align: center; }
+    .editor-empty img { width: 150px; height: 150px; object-fit: cover; border-radius: 28px; box-shadow: 0 16px 35px rgba(63,34,75,.18); }
+    .editor-empty h2 { margin: 20px 0 8px; }
+    .editor-empty p { max-width: 440px; margin: 0; color: var(--muted); line-height: 1.6; }
+
+    .editor { display: none; }
+    .editor.visible { display: block; }
+    .now-playing { display: grid; grid-template-columns: 92px 1fr; gap: 16px; align-items: center; padding: 18px 20px; color: white; background: #321a47; }
+    .now-playing img { width: 92px; height: 92px; border-radius: 18px; object-fit: cover; background: #5a326f; }
+    .now-playing h2 { margin: 0 0 5px; font-size: 1.1rem; }
+    .now-playing p { margin: 0 0 11px; color: #e4d7e9; font-size: .78rem; overflow-wrap: anywhere; }
+    audio { width: 100%; height: 42px; accent-color: var(--pink); }
+
+    .form-body { padding: 22px; }
+    .section-title { margin: 4px 0 14px; font-size: .9rem; font-weight: 850; letter-spacing: .06em; text-transform: uppercase; color: var(--purple-dark); }
+    .form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 15px; }
+    .field { display: flex; flex-direction: column; gap: 7px; min-width: 0; }
+    .field.wide { grid-column: 1 / -1; }
+    .field label { color: #504655; font-size: .8rem; font-weight: 750; }
+    .field small { color: var(--muted); font-size: .72rem; line-height: 1.4; }
+    input, select, textarea {
+      width: 100%;
+      min-height: 44px;
+      border: 1px solid #d9ced8;
+      border-radius: 11px;
+      color: var(--ink);
+      background: white;
+      padding: 10px 12px;
+    }
+    select {
+      appearance: none;
+      padding-right: 38px;
+      background-image: linear-gradient(45deg, transparent 50%, #6d3dc2 50%), linear-gradient(135deg, #6d3dc2 50%, transparent 50%);
+      background-position: calc(100% - 18px) 19px, calc(100% - 13px) 19px;
+      background-size: 5px 5px, 5px 5px;
+      background-repeat: no-repeat;
+    }
+    textarea { min-height: 106px; resize: vertical; line-height: 1.5; }
+    textarea.lyrics { min-height: 260px; }
+    input[readonly] { color: #695f6d; background: #f7f2f6; }
+    .check-row { display: flex; align-items: center; gap: 10px; min-height: 44px; }
+    .check-row input { width: 20px; height: 20px; min-height: auto; accent-color: var(--purple); }
+    .form-divider { height: 1px; margin: 24px 0; background: var(--line); }
+    .editor-actions { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; padding: 17px 22px; border-top: 1px solid var(--line); background: var(--paper); }
+
+    .album-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 24px; }
+    .album-card { display: grid; grid-template-columns: 74px 1fr; gap: 13px; align-items: center; padding: 10px; border: 1px solid var(--line); border-radius: 18px; background: white; box-shadow: 0 10px 30px rgba(62,32,76,.08); }
+    .album-card img { width: 74px; height: 74px; border-radius: 14px; object-fit: cover; background: #eadbea; }
+    .album-card strong { display: block; }
+    .album-card span { display: block; margin-top: 5px; color: var(--muted); font-size: .78rem; }
+
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 26px;
+      z-index: 50;
+      max-width: min(520px, calc(100vw - 30px));
+      padding: 12px 17px;
+      border-radius: 12px;
+      color: white;
+      background: #21172b;
+      box-shadow: var(--shadow);
+      opacity: 0;
+      transform: translate(-50%, 20px);
+      pointer-events: none;
+      transition: .2s ease;
+    }
+    .toast.show { opacity: 1; transform: translate(-50%, 0); }
+    .toast.error { background: var(--danger); }
+
+    dialog { width: min(900px, calc(100vw - 30px)); max-height: 85vh; padding: 0; border: 0; border-radius: 20px; box-shadow: 0 30px 90px rgba(27,12,35,.35); }
+    dialog::backdrop { background: rgba(31,17,38,.6); }
+    .dialog-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 18px 20px; border-bottom: 1px solid var(--line); }
+    .dialog-head h2 { margin: 0; font-size: 1.1rem; }
+    .dialog-head button { border: 0; color: var(--muted); background: transparent; font-size: 1.5rem; }
+    pre { max-height: 65vh; margin: 0; padding: 20px; overflow: auto; color: #ecddf3; background: #201529; font: 13px/1.55 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre-wrap; overflow-wrap: anywhere; }
+
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+    @media (max-width: 1050px) {
+      .intro, .workspace { grid-template-columns: 1fr; }
+      .track-list { max-height: 440px; min-height: 300px; }
+      .empty-state { min-height: 300px; }
+      .repo-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 760px) {
+      .topbar { align-items: flex-start; flex-direction: column; }
+      .top-actions { justify-content: flex-start; }
+      .album-strip, .album-settings { grid-template-columns: 1fr; }
+      .stats-card { grid-template-columns: repeat(2, 1fr); }
+      .repo-grid, .form-grid { grid-template-columns: 1fr; }
+      .field.wide, .mini-grid .wide { grid-column: auto; }
+      .now-playing { grid-template-columns: 68px 1fr; }
+      .now-playing img { width: 68px; height: 68px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true">♪</div>
+      <div><strong>Catalogador MP3</strong><span>Un Pingüino En Mi Ascensor</span></div>
+    </div>
+    <div class="top-actions">
+      <input class="sr-only" id="folderInput" type="file" webkitdirectory directory multiple accept="audio/mpeg,.mp3,image/png">
+      <label class="button secondary" for="folderInput">Elegir carpeta</label>
+      <button class="button secondary" id="previewButton" type="button" disabled>Vista previa JSON</button>
+      <button class="button primary" id="downloadButton" type="button" disabled>Descargar JSON</button>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="intro">
+      <article class="hero">
+        <p class="eyebrow">Herramienta local · los audios no se suben</p>
+        <h1>Escucha, clasifica y documenta las canciones nuevas.</h1>
+        <p>Selecciona la carpeta <strong>mp3nuevos</strong>. La página detectará los MP3, permitirá reproducirlos y preparará los enlaces públicos de GitHub con el formato que utiliza la app.</p>
+      </article>
+      <aside class="stats-card" aria-label="Resumen">
+        <div class="stat"><strong id="totalStat">0</strong><span>MP3 detectados</span></div>
+        <div class="stat"><strong id="assignedStat">0</strong><span>Asignados a álbum</span></div>
+        <div class="stat"><strong id="readyStat">0</strong><span>Listos para exportar</span></div>
+        <div class="stat"><strong id="durationStat">0:00</strong><span>Duración catalogada</span></div>
+      </aside>
+    </section>
+
+    <section class="album-strip" id="albumStrip" aria-label="Álbumes disponibles"></section>
+
+    <details class="settings">
+      <summary>Configuración de GitHub y datos de los álbumes</summary>
+      <div class="settings-body">
+        <p class="section-title">Repositorio de los MP3</p>
+        <div class="repo-grid">
+          <div class="field"><label for="repoOwner">Usuario</label><input id="repoOwner" value="airsoto"></div>
+          <div class="field"><label for="repoName">Repositorio</label><input id="repoName" value="upema_app"></div>
+          <div class="field"><label for="repoBranch">Rama</label><input id="repoBranch" value="main"></div>
+          <div class="field"><label for="repoPath">Carpeta</label><input id="repoPath" value="UPEMA/Resources/mp3nuevos"></div>
+        </div>
+        <p class="section-title">Metadatos de álbum</p>
+        <div class="album-settings" id="albumSettings"></div>
+      </div>
+    </details>
+
+    <section class="workspace">
+      <aside class="panel">
+        <div class="panel-head"><h2>Canciones</h2><p id="folderLabel">Todavía no has elegido una carpeta.</p></div>
+        <div class="filters">
+          <input id="searchInput" type="search" placeholder="Buscar canción" aria-label="Buscar canción">
+          <select id="filterAlbum" aria-label="Filtrar por álbum">
+            <option value="all">Todos</option>
+            <option value="unassigned">Sin asignar</option>
+            <option value="concierto">Concierto</option>
+            <option value="maquetas">Maquetas</option>
+            <option value="libro_letras">Libro de letras</option>
+          </select>
+        </div>
+        <div class="track-list" id="trackList">
+          <div class="empty-state"><div><strong>Elige la carpeta de MP3</strong>Los archivos se procesan únicamente en este navegador.</div></div>
+        </div>
+      </aside>
+
+      <section class="panel">
+        <div class="editor-empty" id="editorEmpty">
+          <div>
+            <img src="../UPEMA/Resources/mp3nuevos/pinguino_maqueta.png" alt="Pingüino en una sala de ensayo">
+            <h2>Selecciona una canción</h2>
+            <p>Después de elegir la carpeta, pulsa cualquier MP3 de la lista para reproducirlo y completar sus características.</p>
+          </div>
+        </div>
+
+        <form class="editor" id="editorForm">
+          <div class="now-playing">
+            <img id="albumArtwork" src="../UPEMA/Resources/mp3nuevos/pinguino_maqueta.png" alt="Portada del álbum seleccionado">
+            <div>
+              <h2 id="playingTitle">Canción</h2>
+              <p id="playingFilename"></p>
+              <audio id="audioPlayer" controls preload="metadata"></audio>
+            </div>
+          </div>
+
+          <div class="form-body">
+            <p class="section-title">Identificación</p>
+            <div class="form-grid">
+              <div class="field">
+                <label for="songAlbum">Álbum *</label>
+                <select id="songAlbum" required>
+                  <option value="">Selecciona un álbum</option>
+                  <option value="concierto">Concierto</option>
+                  <option value="maquetas">Maquetas</option>
+                  <option value="libro_letras">Libro de letras</option>
+                </select>
+              </div>
+              <div class="field"><label for="songNumber">Número *</label><input id="songNumber" type="number" min="1" step="1" required></div>
+              <div class="field wide"><label for="songTitle">Título *</label><input id="songTitle" required></div>
+              <div class="field wide"><label for="songSlug">Slug *</label><input id="songSlug" required><small>Identificador sin espacios, por ejemplo: atrapados_en_el_ascensor.</small></div>
+              <div class="field"><label for="songDuration">Duración en segundos</label><input id="songDuration" readonly></div>
+              <div class="field"><label for="songStable">Estado del enlace</label><div class="check-row"><input id="songStable" type="checkbox" checked><label for="songStable">Enlace estable</label></div></div>
+            </div>
+
+            <div class="form-divider"></div>
+            <p class="section-title">Enlace y procedencia</p>
+            <div class="form-grid">
+              <div class="field wide"><label for="songURL">URL pública del MP3</label><input id="songURL" readonly></div>
+              <div class="field"><label for="songSource">Fuente</label><input id="songSource" value="GitHub upema_app"></div>
+              <div class="field"><label for="songSection">Sección</label><input id="songSection"></div>
+              <div class="field"><label for="songReference">Referencia</label><input id="songReference" value="Un Pingüino en mi Ascensor"></div>
+              <div class="field"><label for="songSources">Fuentes de enlaces</label><input id="songSources" value="github_mp3nuevos"><small>Separa varias fuentes con comas.</small></div>
+              <div class="field wide"><label for="songDescription">Descripción</label><textarea id="songDescription" placeholder="Ejemplo: Maqueta inédita grabada en..."></textarea></div>
+              <div class="field wide"><label for="songImageAlt">Texto alternativo de la imagen</label><input id="songImageAlt"></div>
+            </div>
+
+            <div class="form-divider"></div>
+            <p class="section-title">Letra</p>
+            <div class="field"><label for="songLyrics">Letra completa</label><textarea class="lyrics" id="songLyrics" placeholder="Escribe o pega aquí la letra de la canción..."></textarea></div>
+          </div>
+
+          <div class="editor-actions">
+            <button class="button danger" id="clearSongButton" type="button">Limpiar ficha</button>
+            <button class="button light" id="nextSongButton" type="button">Guardar y siguiente</button>
+          </div>
+        </form>
+      </section>
+    </section>
+  </main>
+
+  <dialog id="previewDialog">
+    <div class="dialog-head"><h2>Vista previa del JSON</h2><button id="closePreview" type="button" aria-label="Cerrar">×</button></div>
+    <pre id="jsonPreview"></pre>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    "use strict";
+
+    const STORAGE_KEY = "upema_catalogador_mp3_v1";
+    const albumOrder = ["concierto", "maquetas", "libro_letras"];
+    const albumDefaults = {
+      concierto: {
+        titulo: "Concierto", anio: "", sello: "", tipo: "álbum", album_url: "",
+        image: "pinguino_concierto.png", imageAlt: "Un Pingüino en mi Ascensor en concierto"
+      },
+      maquetas: {
+        titulo: "Maquetas", anio: "", sello: "", tipo: "álbum", album_url: "",
+        image: "pinguino_maqueta.png", imageAlt: "Un Pingüino en mi Ascensor en una sala de ensayo"
+      },
+      libro_letras: {
+        titulo: "Libro de letras", anio: "", sello: "", tipo: "álbum", album_url: "",
+        image: "pinguino_libro_letras.png", imageAlt: "Un Pingüino en mi Ascensor leyendo un libro"
+      }
+    };
+
+    const state = {
+      tracks: [],
+      selectedId: null,
+      albums: structuredClone(albumDefaults),
+      repository: { owner: "airsoto", name: "upema_app", branch: "main", path: "UPEMA/Resources/mp3nuevos" },
+      audioObjectURL: null,
+      imageObjectURLs: {},
+      folderName: ""
+    };
+
+    const elements = {
+      folderInput: document.querySelector("#folderInput"),
+      previewButton: document.querySelector("#previewButton"),
+      downloadButton: document.querySelector("#downloadButton"),
+      totalStat: document.querySelector("#totalStat"),
+      assignedStat: document.querySelector("#assignedStat"),
+      readyStat: document.querySelector("#readyStat"),
+      durationStat: document.querySelector("#durationStat"),
+      albumStrip: document.querySelector("#albumStrip"),
+      albumSettings: document.querySelector("#albumSettings"),
+      repoOwner: document.querySelector("#repoOwner"),
+      repoName: document.querySelector("#repoName"),
+      repoBranch: document.querySelector("#repoBranch"),
+      repoPath: document.querySelector("#repoPath"),
+      folderLabel: document.querySelector("#folderLabel"),
+      searchInput: document.querySelector("#searchInput"),
+      filterAlbum: document.querySelector("#filterAlbum"),
+      trackList: document.querySelector("#trackList"),
+      editorEmpty: document.querySelector("#editorEmpty"),
+      editorForm: document.querySelector("#editorForm"),
+      albumArtwork: document.querySelector("#albumArtwork"),
+      playingTitle: document.querySelector("#playingTitle"),
+      playingFilename: document.querySelector("#playingFilename"),
+      audioPlayer: document.querySelector("#audioPlayer"),
+      songAlbum: document.querySelector("#songAlbum"),
+      songNumber: document.querySelector("#songNumber"),
+      songTitle: document.querySelector("#songTitle"),
+      songSlug: document.querySelector("#songSlug"),
+      songDuration: document.querySelector("#songDuration"),
+      songStable: document.querySelector("#songStable"),
+      songURL: document.querySelector("#songURL"),
+      songSource: document.querySelector("#songSource"),
+      songSection: document.querySelector("#songSection"),
+      songReference: document.querySelector("#songReference"),
+      songSources: document.querySelector("#songSources"),
+      songDescription: document.querySelector("#songDescription"),
+      songImageAlt: document.querySelector("#songImageAlt"),
+      songLyrics: document.querySelector("#songLyrics"),
+      clearSongButton: document.querySelector("#clearSongButton"),
+      nextSongButton: document.querySelector("#nextSongButton"),
+      previewDialog: document.querySelector("#previewDialog"),
+      jsonPreview: document.querySelector("#jsonPreview"),
+      closePreview: document.querySelector("#closePreview"),
+      toast: document.querySelector("#toast")
+    };
+
+    function slugify(value) {
+      return value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()
+        .replace(/[^a-z0-9]+/g, "_").replace(/^_+|_+$/g, "");
+    }
+
+    function titleFromFilename(filename) {
+      return filename.replace(/\.mp3$/i, "").replace(/[_-]+/g, " ").replace(/\s+/g, " ").trim()
+        .replace(/(^|\s)\S/g, letter => letter.toUpperCase());
+    }
+
+    function encodePath(path) {
+      return path.split("/").filter(Boolean).map(encodeURIComponent).join("/");
+    }
+
+    function githubBase() {
+      const { owner, name, branch, path } = state.repository;
+      return `https://raw.githubusercontent.com/${encodeURIComponent(owner)}/${encodeURIComponent(name)}/${encodeURIComponent(branch)}/${encodePath(path)}`;
+    }
+
+    function githubFileURL(filename) { return `${githubBase()}/${encodeURIComponent(filename)}`; }
+    function albumImageURL(key) { return githubFileURL(state.albums[key].image); }
+    function selectedTrack() { return state.tracks.find(track => track.id === state.selectedId) || null; }
+    function isReady(track) { return Boolean(track.albumKey && track.numero > 0 && track.titulo.trim() && track.slug.trim()); }
+
+    function formatDuration(seconds) {
+      if (!Number.isFinite(seconds) || seconds < 0) return "0:00";
+      const rounded = Math.round(seconds);
+      const hours = Math.floor(rounded / 3600);
+      const minutes = Math.floor((rounded % 3600) / 60);
+      const secs = rounded % 60;
+      return hours ? `${hours}:${String(minutes).padStart(2, "0")}:${String(secs).padStart(2, "0")}` : `${minutes}:${String(secs).padStart(2, "0")}`;
+    }
+
+    function showToast(message, isError = false) {
+      elements.toast.textContent = message;
+      elements.toast.className = `toast show${isError ? " error" : ""}`;
+      clearTimeout(showToast.timer);
+      showToast.timer = setTimeout(() => elements.toast.className = "toast", 2800);
+    }
+
+    function loadSavedState() {
+      try {
+        const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
+        if (!saved) return;
+        if (saved.albums) state.albums = { ...structuredClone(albumDefaults), ...saved.albums };
+        if (saved.repository) state.repository = { ...state.repository, ...saved.repository };
+        state.savedTracks = Array.isArray(saved.tracks) ? saved.tracks : [];
+      } catch (error) {
+        console.warn("No se pudo recuperar el progreso", error);
+      }
+    }
+
+    function saveState() {
+      const tracks = state.tracks.map(({ file, ...track }) => track);
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({ albums: state.albums, repository: state.repository, tracks }));
+    }
+
+    function syncRepositoryInputs() {
+      elements.repoOwner.value = state.repository.owner;
+      elements.repoName.value = state.repository.name;
+      elements.repoBranch.value = state.repository.branch;
+      elements.repoPath.value = state.repository.path;
+    }
+
+    function renderAlbumSettings() {
+      elements.albumSettings.replaceChildren();
+      albumOrder.forEach(key => {
+        const album = state.albums[key];
+        const card = document.createElement("section");
+        card.className = "album-config";
+        const title = document.createElement("h3");
+        title.textContent = album.titulo;
+        card.append(title);
+        const grid = document.createElement("div");
+        grid.className = "mini-grid";
+        grid.innerHTML = `
+          <div class="field"><label>Año</label><input data-album="${key}" data-field="anio" type="number" min="1900" max="2100"></div>
+          <div class="field"><label>Sello</label><input data-album="${key}" data-field="sello"></div>
+          <div class="field"><label>Tipo</label><input data-album="${key}" data-field="tipo"></div>
+          <div class="field"><label>Título</label><input data-album="${key}" data-field="titulo"></div>
+          <div class="field wide"><label>URL del álbum</label><input data-album="${key}" data-field="album_url" type="url" placeholder="https://..."></div>`;
+        card.append(grid);
+        elements.albumSettings.append(card);
+        grid.querySelectorAll("input").forEach(input => input.value = album[input.dataset.field] ?? "");
+      });
+    }
+
+    function imageSourceForAlbum(key) {
+      if (!key) return "../UPEMA/Resources/mp3nuevos/pinguino_maqueta.png";
+      return state.imageObjectURLs[state.albums[key].image.toLowerCase()] || `../UPEMA/Resources/mp3nuevos/${state.albums[key].image}`;
+    }
+
+    function renderAlbumStrip() {
+      elements.albumStrip.replaceChildren();
+      albumOrder.forEach(key => {
+        const album = state.albums[key];
+        const count = state.tracks.filter(track => track.albumKey === key).length;
+        const card = document.createElement("article");
+        card.className = "album-card";
+        const image = document.createElement("img");
+        image.src = imageSourceForAlbum(key);
+        image.alt = album.imageAlt;
+        const copy = document.createElement("div");
+        const title = document.createElement("strong");
+        title.textContent = album.titulo;
+        const detail = document.createElement("span");
+        detail.textContent = `${count} ${count === 1 ? "canción" : "canciones"} · ${album.image}`;
+        copy.append(title, detail);
+        card.append(image, copy);
+        elements.albumStrip.append(card);
+      });
+    }
+
+    function renderStats() {
+      const assigned = state.tracks.filter(track => track.albumKey).length;
+      const ready = state.tracks.filter(isReady).length;
+      const duration = state.tracks.reduce((sum, track) => sum + (Number(track.duracionSegundos) || 0), 0);
+      elements.totalStat.textContent = state.tracks.length;
+      elements.assignedStat.textContent = assigned;
+      elements.readyStat.textContent = ready;
+      elements.durationStat.textContent = formatDuration(duration);
+      elements.previewButton.disabled = state.tracks.length === 0;
+      elements.downloadButton.disabled = state.tracks.length === 0;
+    }
+
+    function renderTrackList() {
+      if (!state.tracks.length) return;
+      const query = elements.searchInput.value.trim().toLowerCase();
+      const filter = elements.filterAlbum.value;
+      const filtered = state.tracks.filter(track => {
+        const matchesText = !query || track.titulo.toLowerCase().includes(query) || track.filename.toLowerCase().includes(query);
+        const matchesAlbum = filter === "all" || (filter === "unassigned" ? !track.albumKey : track.albumKey === filter);
+        return matchesText && matchesAlbum;
+      });
+      elements.trackList.replaceChildren();
+      if (!filtered.length) {
+        const empty = document.createElement("div");
+        empty.className = "empty-state";
+        empty.textContent = "No hay canciones que coincidan con el filtro.";
+        elements.trackList.append(empty);
+        return;
+      }
+      filtered.forEach((track, index) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = `track-item${track.id === state.selectedId ? " active" : ""}`;
+        button.dataset.id = track.id;
+        const number = document.createElement("span");
+        number.className = "track-index";
+        number.textContent = track.numero || index + 1;
+        const copy = document.createElement("span");
+        copy.className = "track-copy";
+        const title = document.createElement("strong");
+        title.textContent = track.titulo;
+        const meta = document.createElement("span");
+        meta.textContent = track.albumKey ? `${state.albums[track.albumKey].titulo} · ${formatDuration(track.duracionSegundos)}` : `Sin asignar · ${formatDuration(track.duracionSegundos)}`;
+        copy.append(title, meta);
+        const dot = document.createElement("span");
+        dot.className = `state-dot ${isReady(track) ? "ready" : track.albumKey ? "partial" : ""}`;
+        dot.title = isReady(track) ? "Lista" : track.albumKey ? "Ficha incompleta" : "Sin asignar";
+        button.append(number, copy, dot);
+        elements.trackList.append(button);
+      });
+    }
+
+    function nextNumberForAlbum(albumKey, excludingId = null) {
+      const numbers = state.tracks.filter(track => track.id !== excludingId && track.albumKey === albumKey)
+        .map(track => Number(track.numero) || 0);
+      return Math.max(0, ...numbers) + 1;
+    }
+
+    function defaultTrack(file, index, saved) {
+      const title = saved?.titulo || titleFromFilename(file.name);
+      return {
+        id: file.webkitRelativePath || `${file.name}-${file.size}-${file.lastModified}`,
+        filename: file.name,
+        relativePath: file.webkitRelativePath || file.name,
+        file,
+        albumKey: saved?.albumKey || "",
+        numero: saved?.numero || "",
+        titulo: title,
+        slug: saved?.slug || slugify(title),
+        slugManual: Boolean(saved?.slugManual),
+        duracionSegundos: saved?.duracionSegundos || 0,
+        fuente: saved?.fuente || "GitHub upema_app",
+        seccion: saved?.seccion || "",
+        referencia: saved?.referencia || "Un Pingüino en mi Ascensor",
+        descripcion: saved?.descripcion || "",
+        imagenAlt: saved?.imagenAlt || "",
+        fuentesEnlaces: saved?.fuentesEnlaces || "github_mp3nuevos",
+        estable: saved?.estable ?? true,
+        letra: saved?.letra || "",
+        order: index
+      };
+    }
+
+    function selectTrack(id) {
+      saveCurrentForm();
+      const track = state.tracks.find(item => item.id === id);
+      if (!track) return;
+      state.selectedId = id;
+      elements.editorEmpty.style.display = "none";
+      elements.editorForm.classList.add("visible");
+      if (state.audioObjectURL) URL.revokeObjectURL(state.audioObjectURL);
+      state.audioObjectURL = URL.createObjectURL(track.file);
+      elements.audioPlayer.src = state.audioObjectURL;
+      elements.playingTitle.textContent = track.titulo;
+      elements.playingFilename.textContent = track.filename;
+      elements.songAlbum.value = track.albumKey;
+      elements.songNumber.value = track.numero;
+      elements.songTitle.value = track.titulo;
+      elements.songSlug.value = track.slug;
+      elements.songDuration.value = track.duracionSegundos ? Math.round(track.duracionSegundos) : "Pendiente de leer";
+      elements.songStable.checked = track.estable;
+      elements.songURL.value = githubFileURL(track.filename);
+      elements.songSource.value = track.fuente;
+      elements.songSection.value = track.seccion || (track.albumKey ? state.albums[track.albumKey].titulo : "");
+      elements.songReference.value = track.referencia;
+      elements.songSources.value = track.fuentesEnlaces;
+      elements.songDescription.value = track.descripcion;
+      elements.songImageAlt.value = track.imagenAlt || `${track.titulo}${track.albumKey ? ` (${state.albums[track.albumKey].titulo})` : ""}`;
+      elements.songLyrics.value = track.letra;
+      elements.albumArtwork.src = imageSourceForAlbum(track.albumKey);
+      elements.albumArtwork.alt = track.albumKey ? state.albums[track.albumKey].imageAlt : "Portada pendiente de seleccionar";
+      renderTrackList();
+    }
+
+    function saveCurrentForm() {
+      const track = selectedTrack();
+      if (!track || !elements.editorForm.classList.contains("visible")) return;
+      track.albumKey = elements.songAlbum.value;
+      track.numero = Number(elements.songNumber.value) || "";
+      track.titulo = elements.songTitle.value.trim();
+      track.slug = elements.songSlug.value.trim();
+      track.estable = elements.songStable.checked;
+      track.fuente = elements.songSource.value.trim();
+      track.seccion = elements.songSection.value.trim();
+      track.referencia = elements.songReference.value.trim();
+      track.fuentesEnlaces = elements.songSources.value.trim();
+      track.descripcion = elements.songDescription.value.trim();
+      track.imagenAlt = elements.songImageAlt.value.trim();
+      track.letra = elements.songLyrics.value;
+      saveState();
+      renderStats();
+      renderAlbumStrip();
+      renderTrackList();
+    }
+
+    function clearCurrentTrack() {
+      const track = selectedTrack();
+      if (!track || !confirm(`¿Quieres limpiar la ficha de “${track.titulo}”?`)) return;
+      track.albumKey = "";
+      track.numero = "";
+      track.titulo = titleFromFilename(track.filename);
+      track.slug = slugify(track.titulo);
+      track.slugManual = false;
+      track.fuente = "GitHub upema_app";
+      track.seccion = "";
+      track.referencia = "Un Pingüino en mi Ascensor";
+      track.descripcion = "";
+      track.imagenAlt = "";
+      track.fuentesEnlaces = "github_mp3nuevos";
+      track.estable = true;
+      track.letra = "";
+      saveState();
+      selectTrack(track.id);
+      showToast("Ficha limpiada");
+    }
+
+    function selectNextTrack() {
+      saveCurrentForm();
+      const index = state.tracks.findIndex(track => track.id === state.selectedId);
+      if (index >= 0 && index < state.tracks.length - 1) selectTrack(state.tracks[index + 1].id);
+      else showToast("Has llegado a la última canción");
+    }
+
+    function updateRepositoryFromInputs() {
+      state.repository = {
+        owner: elements.repoOwner.value.trim() || "airsoto",
+        name: elements.repoName.value.trim() || "upema_app",
+        branch: elements.repoBranch.value.trim() || "main",
+        path: elements.repoPath.value.trim().replace(/^\/+|\/+$/g, "") || "UPEMA/Resources/mp3nuevos"
+      };
+      const track = selectedTrack();
+      if (track) elements.songURL.value = githubFileURL(track.filename);
+      saveState();
+    }
+
+    function buildJSON() {
+      saveCurrentForm();
+      const albums = albumOrder.map(key => {
+        const album = state.albums[key];
+        const songs = state.tracks.filter(track => track.albumKey === key)
+          .sort((a, b) => (Number(a.numero) || 9999) - (Number(b.numero) || 9999) || a.order - b.order)
+          .map(track => {
+            const audioURL = githubFileURL(track.filename);
+            const song = {
+              numero: Number(track.numero),
+              titulo: track.titulo,
+              slug: track.slug,
+              duracion_segundos: Math.round(Number(track.duracionSegundos) || 0),
+              pingui_mp3_url: audioURL,
+              enlaces_audio: [{
+                tipo: "mp3",
+                fuente: track.fuente || "GitHub upema_app",
+                url: audioURL,
+                estable: Boolean(track.estable),
+                seccion: track.seccion || album.titulo,
+                referencia: track.referencia || "Un Pingüino en mi Ascensor",
+                descripcion: track.descripcion,
+                imagen: albumImageURL(key),
+                imagen_alt: track.imagenAlt || `${track.titulo} (${album.titulo})`
+              }],
+              fuentes_enlaces: track.fuentesEnlaces.split(",").map(item => item.trim()).filter(Boolean),
+              letra: track.letra
+            };
+            if (!song.duracion_segundos) delete song.duracion_segundos;
+            return song;
+          });
+        const result = {
+          titulo: album.titulo,
+          anio: album.anio ? Number(album.anio) : null,
+          sello: album.sello || null,
+          tipo: album.tipo || "álbum",
+          album_url: album.album_url || null,
+          portada_url: albumImageURL(key),
+          canciones: songs
+        };
+        Object.keys(result).forEach(field => result[field] === null && delete result[field]);
+        return result;
+      });
+      return {
+        artista: "Un Pingüino En Mi Ascensor",
+        generado_el: new Date().toISOString(),
+        albumes: albums,
+        canciones_sueltas_con_audio: []
+      };
+    }
+
+    function validateForExport() {
+      const problems = [];
+      state.tracks.forEach((track, index) => {
+        if (!track.albumKey) problems.push(`${index + 1}. ${track.titulo}: falta el álbum`);
+        if (!track.numero || Number(track.numero) < 1) problems.push(`${index + 1}. ${track.titulo}: falta el número`);
+        if (!track.titulo.trim()) problems.push(`${index + 1}. ${track.filename}: falta el título`);
+        if (!track.slug.trim()) problems.push(`${index + 1}. ${track.titulo}: falta el slug`);
+      });
+      albumOrder.forEach(key => {
+        const numbers = state.tracks.filter(track => track.albumKey === key).map(track => Number(track.numero));
+        const duplicates = numbers.filter((number, index) => number && numbers.indexOf(number) !== index);
+        if (duplicates.length) problems.push(`${state.albums[key].titulo}: hay números de pista repetidos (${[...new Set(duplicates)].join(", ")})`);
+      });
+      return problems;
+    }
+
+    function previewJSON() {
+      const data = buildJSON();
+      elements.jsonPreview.textContent = JSON.stringify(data, null, 2);
+      elements.previewDialog.showModal();
+    }
+
+    function downloadJSON() {
+      const problems = validateForExport();
+      if (problems.length) {
+        alert(`Antes de descargar el JSON corrige lo siguiente:\n\n${problems.slice(0, 18).join("\n")}${problems.length > 18 ? `\n… y ${problems.length - 18} problemas más.` : ""}`);
+        return;
+      }
+      const blob = new Blob([JSON.stringify(buildJSON(), null, 2)], { type: "application/json;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = `discografia_nuevas_canciones_${new Date().toISOString().slice(0, 10)}.json`;
+      document.body.append(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
+      showToast("JSON descargado correctamente");
+    }
+
+    async function handleFolder(files) {
+      saveCurrentForm();
+      Object.values(state.imageObjectURLs).forEach(URL.revokeObjectURL);
+      state.imageObjectURLs = {};
+      const allFiles = [...files];
+      const mp3Files = allFiles.filter(file => file.name.toLowerCase().endsWith(".mp3"))
+        .sort((a, b) => a.name.localeCompare(b.name, "es", { numeric: true }));
+      allFiles.filter(file => file.type === "image/png" || file.name.toLowerCase().endsWith(".png")).forEach(file => {
+        state.imageObjectURLs[file.name.toLowerCase()] = URL.createObjectURL(file);
+      });
+      if (!mp3Files.length) {
+        showToast("La carpeta seleccionada no contiene archivos MP3", true);
+        return;
+      }
+      const savedByFilename = new Map((state.savedTracks || []).map(track => [track.filename, track]));
+      const currentByFilename = new Map(state.tracks.map(track => [track.filename, track]));
+      state.tracks = mp3Files.map((file, index) => defaultTrack(file, index, currentByFilename.get(file.name) || savedByFilename.get(file.name)));
+      state.folderName = mp3Files[0].webkitRelativePath?.split("/")[0] || "Carpeta seleccionada";
+      elements.folderLabel.textContent = `${state.folderName} · ${state.tracks.length} MP3`;
+      state.selectedId = null;
+      elements.editorForm.classList.remove("visible");
+      elements.editorEmpty.style.display = "grid";
+      saveState();
+      renderAll();
+      selectTrack(state.tracks[0].id);
+      showToast(`${state.tracks.length} MP3 detectados`);
+    }
+
+    function renderAll() {
+      renderAlbumStrip();
+      renderStats();
+      renderTrackList();
+    }
+
+    elements.folderInput.addEventListener("change", event => handleFolder(event.target.files));
+    elements.trackList.addEventListener("click", event => {
+      const button = event.target.closest(".track-item");
+      if (button) selectTrack(button.dataset.id);
+    });
+    elements.searchInput.addEventListener("input", renderTrackList);
+    elements.filterAlbum.addEventListener("change", renderTrackList);
+    elements.previewButton.addEventListener("click", previewJSON);
+    elements.downloadButton.addEventListener("click", downloadJSON);
+    elements.closePreview.addEventListener("click", () => elements.previewDialog.close());
+    elements.previewDialog.addEventListener("click", event => { if (event.target === elements.previewDialog) elements.previewDialog.close(); });
+    elements.clearSongButton.addEventListener("click", clearCurrentTrack);
+    elements.nextSongButton.addEventListener("click", selectNextTrack);
+
+    elements.audioPlayer.addEventListener("loadedmetadata", () => {
+      const track = selectedTrack();
+      if (!track || !Number.isFinite(elements.audioPlayer.duration)) return;
+      track.duracionSegundos = Math.round(elements.audioPlayer.duration);
+      elements.songDuration.value = track.duracionSegundos;
+      saveState();
+      renderStats();
+      renderTrackList();
+    });
+
+    elements.songAlbum.addEventListener("change", () => {
+      const track = selectedTrack();
+      if (!track) return;
+      const albumKey = elements.songAlbum.value;
+      if (albumKey && !elements.songNumber.value) elements.songNumber.value = nextNumberForAlbum(albumKey, track.id);
+      elements.songSection.value = albumKey ? state.albums[albumKey].titulo : "";
+      elements.songImageAlt.value = `${elements.songTitle.value}${albumKey ? ` (${state.albums[albumKey].titulo})` : ""}`;
+      elements.albumArtwork.src = imageSourceForAlbum(albumKey);
+      saveCurrentForm();
+    });
+
+    elements.songTitle.addEventListener("input", () => {
+      const track = selectedTrack();
+      if (!track) return;
+      if (!track.slugManual) elements.songSlug.value = slugify(elements.songTitle.value);
+      const albumKey = elements.songAlbum.value;
+      elements.songImageAlt.value = `${elements.songTitle.value}${albumKey ? ` (${state.albums[albumKey].titulo})` : ""}`;
+      elements.playingTitle.textContent = elements.songTitle.value || track.filename;
+    });
+    elements.songSlug.addEventListener("input", () => { const track = selectedTrack(); if (track) track.slugManual = true; });
+    elements.editorForm.addEventListener("input", event => {
+      if (event.target !== elements.songTitle && event.target !== elements.songSlug) saveCurrentForm();
+    });
+    elements.editorForm.addEventListener("submit", event => event.preventDefault());
+
+    [elements.repoOwner, elements.repoName, elements.repoBranch, elements.repoPath].forEach(input => input.addEventListener("input", updateRepositoryFromInputs));
+    elements.albumSettings.addEventListener("input", event => {
+      const input = event.target.closest("input[data-album]");
+      if (!input) return;
+      state.albums[input.dataset.album][input.dataset.field] = input.value;
+      saveState();
+      renderAlbumStrip();
+      const track = selectedTrack();
+      if (track?.albumKey === input.dataset.album) {
+        elements.songSection.value = state.albums[track.albumKey].titulo;
+        elements.songImageAlt.value = `${elements.songTitle.value} (${state.albums[track.albumKey].titulo})`;
+      }
+    });
+
+    window.addEventListener("beforeunload", () => {
+      saveCurrentForm();
+      if (state.audioObjectURL) URL.revokeObjectURL(state.audioObjectURL);
+      Object.values(state.imageObjectURLs).forEach(URL.revokeObjectURL);
+    });
+
+    loadSavedState();
+    syncRepositoryInputs();
+    renderAlbumSettings();
+    renderAll();
+  </script>
+</body>
+</html>

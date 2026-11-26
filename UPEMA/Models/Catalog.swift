@@ -48,11 +48,25 @@ struct Song: Decodable, Identifiable, Hashable {
 
     var id: String { "\(albumTitle)|\(slug ?? titulo)|\(numero ?? 0)" }
     var lyrics: String? { letra?.trimmingCharacters(in: .whitespacesAndNewlines).nilIfEmpty }
-    var audioURL: URL? {
-        let candidates = [downloadURL, pinguiMP3URL, temporaryMP3URL]
+    var directAudioURL: URL? {
+        let candidates = [pinguiMP3URL, temporaryMP3URL, downloadURL]
             + (enlacesAudio ?? []).map { Optional($0.url) }
-        return candidates.compactMap { $0 }.compactMap(URL.init(string:)).first
+        return candidates.compactMap { $0 }
+            .compactMap(URL.init(string:))
+            .first(where: \.isDirectAudioResource)
     }
+    var bandcampPageURL: URL? {
+        let candidates = [trackURL, downloadURL]
+            + (enlacesAudio ?? []).map { Optional($0.url) }
+        guard let url = candidates.compactMap({ $0 })
+            .compactMap(URL.init(string:))
+            .first(where: \.isBandcampTrackPage) else { return nil }
+        var components = URLComponents(url: url, resolvingAgainstBaseURL: false)
+        components?.query = nil
+        components?.fragment = nil
+        return components?.url
+    }
+    var hasPlayableSource: Bool { directAudioURL != nil || bandcampPageURL != nil }
     var durationText: String? {
         guard let duracionSegundos else { return nil }
         return DurationFormatter.string(duracionSegundos)
@@ -126,4 +140,17 @@ enum DurationFormatter {
 
 private extension String {
     var nilIfEmpty: String? { isEmpty ? nil : self }
+}
+
+private extension URL {
+    var isBandcampTrackPage: Bool {
+        host?.lowercased() == "upema.bandcamp.com" && path.hasPrefix("/track/")
+    }
+
+    var isDirectAudioResource: Bool {
+        let host = host?.lowercased() ?? ""
+        let audioExtensions = ["mp3", "m4a", "aac", "wav", "flac", "ogg"]
+        if audioExtensions.contains(pathExtension.lowercased()) { return true }
+        return host.hasSuffix("bcbits.com") && path.contains("/stream/")
+    }
 }

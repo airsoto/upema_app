@@ -28,7 +28,7 @@ struct SongRow: View {
                             .lineLimit(1)
                         HStack(spacing: 5) {
                             if showArtwork { Text(song.albumTitle).lineLimit(1) }
-                            if song.audioURL == nil {
+                            if !song.hasPlayableSource {
                                 Label("Sin audio", systemImage: "waveform.slash")
                             } else if let duration = song.durationText { Text(duration) }
                         }
@@ -43,10 +43,10 @@ struct SongRow: View {
                 .contentShape(Rectangle())
             }
             .buttonStyle(.plain)
-            .disabled(song.audioURL == nil)
+            .disabled(!song.hasPlayableSource)
 
             Menu {
-                if song.audioURL != nil {
+                if song.hasPlayableSource {
                     Button { player.play(song, in: context) } label: { Label("Reproducir", systemImage: "play.fill") }
                 }
                 if song.lyrics != nil {

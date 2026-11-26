@@ -8,7 +8,7 @@ final class CatalogStore: ObservableObject {
     @Published private(set) var loadError: String?
 
     var songs: [Song] { albums.flatMap(\.canciones) + looseSongs }
-    var playableSongs: [Song] { songs.filter { $0.audioURL != nil } }
+    var playableSongs: [Song] { songs.filter(\.hasPlayableSource) }
 
     init(bundle: Bundle = .main) {
         do {
@@ -42,4 +42,3 @@ private enum CatalogError: LocalizedError {
     case missingFile
     var errorDescription: String? { "No se encontró discografia.json." }
 }
-

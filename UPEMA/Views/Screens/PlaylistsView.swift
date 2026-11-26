@@ -45,7 +45,7 @@ struct PlaylistDetailView: View {
     var body: some View {
         List {
             Section {
-                Button { player.playAll(songs) } label: { Label("Reproducir lista", systemImage: "play.fill") }.disabled(!songs.contains { $0.audioURL != nil })
+                Button { player.playAll(songs) } label: { Label("Reproducir lista", systemImage: "play.fill") }.disabled(!songs.contains(\.hasPlayableSource))
             }
             Section {
                 if songs.isEmpty { Text("Añade canciones desde cualquier álbum.").foregroundStyle(.secondary) }
@@ -59,4 +59,3 @@ struct PlaylistDetailView: View {
         .navigationTitle(playlist?.name ?? "Lista")
     }
 }
-

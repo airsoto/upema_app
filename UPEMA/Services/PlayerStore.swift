@@ -16,6 +16,7 @@ final class PlayerStore: ObservableObject {
     private var timeObserver: Any?
     private var endObserver: NSObjectProtocol?
     private var artworkTask: Task<Void, Never>?
+    private var playbackTask: Task<Void, Never>?
 
     init() {
         configureAudioSession()
@@ -23,6 +24,7 @@ final class PlayerStore: ObservableObject {
     }
 
     deinit {
+        playbackTask?.cancel()
         if let timeObserver { player?.removeTimeObserver(timeObserver) }
         if let endObserver { NotificationCenter.default.removeObserver(endObserver) }
     }
@@ -31,13 +33,13 @@ final class PlayerStore: ObservableObject {
     var canGoForward: Bool { queue.count > 1 }
 
     func play(_ song: Song, in songs: [Song]) {
-        let playable = songs.filter { $0.audioURL != nil }
+        let playable = songs.filter(\.hasPlayableSource)
         queue = playable.contains(song) ? playable : [song]
         start(song)
     }
 
     func playAll(_ songs: [Song], shuffled: Bool = false) {
-        let playable = songs.filter { $0.audioURL != nil }
+        let playable = songs.filter(\.hasPlayableSource)
         guard let first = shuffled ? playable.randomElement() : playable.first else {
             errorMessage = "Estas canciones no incluyen audio reproducible en el catálogo."
             return
@@ -65,23 +67,55 @@ final class PlayerStore: ObservableObject {
     }
 
     private func start(_ song: Song) {
-        guard let url = song.audioURL else {
+        guard song.hasPlayableSource else {
             errorMessage = "“\(song.titulo)” no tiene una URL de audio en el catálogo."
             return
         }
+        playbackTask?.cancel()
         removeObservers()
         currentSong = song
         elapsed = 0
         duration = song.duracionSegundos ?? 0
         errorMessage = nil
+        isPlaying = false
+        loadArtwork(for: song)
 
+        playbackTask = Task { [weak self] in
+            guard let self else { return }
+            do {
+                guard let url = try await self.resolveAudioURL(for: song) else {
+                    self.errorMessage = "No se encontró un stream vigente para “\(song.titulo)”."
+                    return
+                }
+                guard !Task.isCancelled, self.currentSong == song else { return }
+                self.preparePlayer(for: song, url: url)
+            } catch is CancellationError {
+                return
+            } catch {
+                guard !Task.isCancelled else { return }
+                self.errorMessage = "No se pudo preparar “\(song.titulo)”: \(error.localizedDescription)"
+            }
+        }
+    }
+
+    private func preparePlayer(for song: Song, url: URL) {
         let item = AVPlayerItem(url: url)
         player = AVPlayer(playerItem: item)
         addObservers(for: item)
         player?.play()
         isPlaying = true
         updateNowPlaying()
-        loadArtwork(for: song)
+    }
+
+    private func resolveAudioURL(for song: Song) async throws -> URL? {
+        if let pageURL = song.bandcampPageURL {
+            let (data, response) = try await URLSession.shared.data(from: pageURL)
+            guard let http = response as? HTTPURLResponse, (200..<300).contains(http.statusCode) else {
+                throw URLError(.badServerResponse)
+            }
+            if let streamURL = BandcampStreamResolver.streamURL(from: data) { return streamURL }
+        }
+        return song.directAudioURL
     }
 
     private func move(by offset: Int) {
@@ -158,3 +192,18 @@ final class PlayerStore: ObservableObject {
     }
 }
 
+enum BandcampStreamResolver {
+    private static let pattern = #""mp3-128"\s*:\s*"(https:[^"]+)""#
+
+    static func streamURL(from data: Data) -> URL? {
+        guard var html = String(data: data, encoding: .utf8) else { return nil }
+        html = html
+            .replacingOccurrences(of: "&quot;", with: "\"")
+            .replacingOccurrences(of: "&amp;", with: "&")
+            .replacingOccurrences(of: "\\u0026", with: "&")
+        guard let expression = try? NSRegularExpression(pattern: pattern),
+              let match = expression.firstMatch(in: html, range: NSRange(html.startIndex..., in: html)),
+              let range = Range(match.range(at: 1), in: html) else { return nil }
+        return URL(string: String(html[range]))
+    }
+}

@@ -40,13 +40,13 @@ workflows:
       - name: Set next App Store build number
         script: |
           cd "$CM_BUILD_DIR"
+          LATEST_BUILD_NUMBER=""
           if ! LATEST_BUILD_NUMBER=$(app-store-connect get-latest-app-store-build-number "$APP_STORE_APPLE_ID" --platform=IOS); then
-            echo "No se pudo consultar el último build de App Store Connect."
-            exit 1
+            echo "Aviso: no se pudo consultar el último build de App Store Connect."
           fi
           if ! [[ "$LATEST_BUILD_NUMBER" =~ ^[0-9]+$ ]]; then
-            echo "Número de build recibido no válido: $LATEST_BUILD_NUMBER"
-            exit 1
+            echo "App Store Connect no devolvió un build; se usará el número de CodeMagic."
+            LATEST_BUILD_NUMBER=0
           fi
 
           NEXT_BUILD_NUMBER=$((LATEST_BUILD_NUMBER + 1))
